@@ -8,5 +8,7 @@ RSpec.describe Party, type: :model do
 
   describe "Relationships" do
     it { should belong_to :movie }
+    it { should have_many :user_parties }
+    it { should have_many(:users).through(:user_parties) }
   end
 end
