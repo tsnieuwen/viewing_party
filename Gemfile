@@ -15,10 +15,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'bootsnap'
 gem 'jbuilder', '~> 2.5'
+gem 'faraday'
 
 group :development, :test do
   gem 'pry'
   gem 'travis'
+
 end
 
 group :development do
@@ -33,6 +35,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers', '~> 4.0'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
