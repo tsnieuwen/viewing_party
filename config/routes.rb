@@ -6,7 +6,16 @@ Rails.application.routes.draw do
 
   #users
   resources :users, only: [:new, :create]
+  
+  #profile
+  get '/profile', to: 'users#show'
 
   #login
   get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#login'
+
+  #logout
+  get '/logout', to: 'sessions#logout'
+  delete '/logout', to: 'sessions#logout'
+
 end
