@@ -15,7 +15,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'bootsnap'
 gem 'jbuilder', '~> 2.5'
+
+# Api
 gem 'faraday'
+
+# Authentication
+gem 'bcrypt'
 
 group :development, :test do
   gem 'pry'
