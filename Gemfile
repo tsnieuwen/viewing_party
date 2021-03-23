@@ -23,6 +23,10 @@ gem 'figaro'
 # Authentication
 gem 'bcrypt'
 
+# Styling
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
+
 group :development, :test do
   gem 'pry'
   gem 'travis'
