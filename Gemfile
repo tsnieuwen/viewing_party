@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Api
 gem 'faraday'
+gem 'figaro'
 
 # Authentication
 gem 'bcrypt'
