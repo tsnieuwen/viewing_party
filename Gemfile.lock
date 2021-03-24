@@ -279,6 +279,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   bcrypt
   bootsnap
   bootstrap (~> 4.0.0)
