@@ -3,6 +3,9 @@ class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true
   validates :password, presence: true
   validates_confirmation_of :password
+
+  has_many :user_parties
+  has_many :parties, through: :user_parties
   
   has_secure_password
   

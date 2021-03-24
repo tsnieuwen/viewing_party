@@ -16,12 +16,19 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bootsnap'
 gem 'jbuilder', '~> 2.5'
 
+
 # Api
 gem 'faraday'
 gem 'figaro'
+gem 'mimemagic', '~> 0.3.6'
 
 # Authentication
 gem 'bcrypt'
+
+# Styling
+gem 'bootstrap', '~> 4.0.0'
+gem 'autoprefixer-rails'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'pry'
