@@ -1,4 +1,6 @@
-language: ruby
+language: ruby, node_js
+node_jos:
+- node
 rbenv:
 - 2.5.3
 addons:
@@ -11,6 +13,3 @@ deploy:
   api_key:
   app: damp-fjord-30128
   run: rails db:migrate
-language: node_js
-node_js:
-- node
