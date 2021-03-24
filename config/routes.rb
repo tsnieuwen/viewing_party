@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   #users
   resources :users, only: [:new, :create]
+
+  #dashboard
+  get '/dashboard', to: 'dashboard#index'
   
   #profile
   get '/profile', to: 'users#show'

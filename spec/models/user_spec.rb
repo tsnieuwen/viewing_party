@@ -7,6 +7,11 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of :password }
   end
 
+  describe "Relationships" do
+    it { should have_many :user_parties }
+    it { should have_many(:parties).through(:user_parties) }
+  end
+
   describe "Callbacks" do
     it "Cleans email to lowercase" do
       user = User.create(email: 'GREAT@example.com', password: '1234')
