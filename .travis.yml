@@ -6,6 +6,9 @@ addons:
 script:
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
 - bundle exec rspec
+language: node_js
+node_js:
+- node
 deploy:
   provider: heroku
   api_key:
