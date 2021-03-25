@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   
   #dashboard
   get '/dashboard', to: 'dashboard#index'
-  
+
   #profile
   get '/profile', to: 'users#show'
 
@@ -23,5 +23,8 @@ Rails.application.routes.draw do
   #logout
   get '/logout', to: 'sessions#logout'
   delete '/logout', to: 'sessions#logout'
+
+  #movies
+  resources :movies, only: [:index, :show]
 
 end

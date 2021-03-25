@@ -1,0 +1,25 @@
+<h1><%= @movie_info.title %></h1>
+<h4> Summary </h4>
+<%= @movie_info.summary %>
+
+<h4> Runtime </h4>
+<%= @movie_info.hours %> hr <%= @movie_info.minutes %> min
+
+<h4> Genre(s) </h4>
+<% @movie_info.genres.each do |hash|  %>
+<li><%= hash[:name] %></li>
+<% end  %>
+
+<h4> Vote Average </h4>
+<%= @movie_info.vote_average %>
+
+<h4> Cast </h4>
+<% @cast.each do |member| %>
+<li><%= member[:name] %> as <%= member[:character] %></li>
+<% end %>
+
+<h2>Reviews</h2>
+Total Reviews: <%= @reviews.count %>
+<% @reviews.each do |review| %>
+<li><%= review[:author] %>: <%= review[:content] %></li><br>
+<% end %>
