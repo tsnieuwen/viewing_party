@@ -1,3 +1,7 @@
-  <% @top_movies.each do |movie| %>
-  <p><%= movie.title %>               Vote Average: <%= movie.rating %></p>
+  <% @movies.each do |movie| %>
+  <p><%= link_to movie.title, "/movies/#{movie.api_id}" %>               Vote Average: <%= movie.rating %></p>
   <% end %>
+
+  <%if @movies.empty? %>
+  <p><%= "No movies matched your search and you should feel bad" %></p>
+  <% end  %>

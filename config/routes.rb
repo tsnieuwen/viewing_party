@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#logout'
   delete '/logout', to: 'sessions#logout'
 
-  #top_movies
-  get 'movies', to: 'movies#index'
+  #movies
+  resources :movies, only: [:index, :show]
 
 end
