@@ -19,6 +19,7 @@ RSpec.describe 'As an authenticated user' do
       
       within(".friends") do
         expect(page).to have_button('Add Friend')
+        expect(page).to have_content('You currently have no friends.')
       end
     end
   end

@@ -1,0 +1,5 @@
+<%= form_with url: new_friend_path, local: true do |f|%>
+  <%= f.text_field :email, placeholder: "Friend's Email" %>
+
+  <%= f.submit 'Add Friend' %>
+<% end %>
