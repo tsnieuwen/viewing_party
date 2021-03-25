@@ -10,6 +10,9 @@ RSpec.describe User, type: :model do
   describe "Relationships" do
     it { should have_many :user_parties }
     it { should have_many(:parties).through(:user_parties) }
+
+    it { should have_many :friendships }
+    it { should have_many(:friends).through(:friendships) }
   end
 
   describe "Callbacks" do

@@ -16,8 +16,10 @@
 /node_modules
 /yarn-error.log
 
-# Ignore test coverage
-/coverage/*
+
 
 # Ignore application configuration
 /config/application.yml
+
+/coverage
+
