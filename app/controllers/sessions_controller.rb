@@ -16,13 +16,8 @@ class SessionsController < ApplicationController
   end
 
   def logout
-    begin
       session[:user_id] = nil
       flash[:message] = "You have been logged out"
       redirect_to root_path
-    rescue
-      flash[:message] = "An unexpected error occured"
-      redirect_to root_path
-    end
   end
 end

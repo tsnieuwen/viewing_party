@@ -1,0 +1,7 @@
+<% if current_user.friends.empty? %>
+  <p>You currently have no friends.</p>
+<% else %>
+  <% current_user.friends.each do |friend| %>
+    <p><%= friend.email %><p>
+  <% end %>
+<% end %>
