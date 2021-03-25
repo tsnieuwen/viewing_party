@@ -5,11 +5,10 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   #users
-  resources :users, only: [:new, :create] do
-  end
+  resources :users, only: [:new, :create] 
   
   #friends
-  resources :friends, only: [:new, :create]
+  resources :friendships, only: [:new, :create]
   
   #dashboard
   get '/dashboard', to: 'dashboard#index'
