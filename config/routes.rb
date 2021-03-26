@@ -30,7 +30,7 @@ Rails.application.routes.draw do
   #movies
   resources :movies, only: [:index, :show]
 
-  #party
+  #parties
   resources :parties, only: [:new, :create]
 
 end
