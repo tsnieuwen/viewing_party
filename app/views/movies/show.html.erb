@@ -1,4 +1,8 @@
 <h1><%= @movie_info.title %></h1>
+
+<%= button_to "Create Viewing Party for #{@movie_info.title}", movies_path,
+ params: { q: :top_rated }, method: :get %><br>
+
 <h4> Summary </h4>
 <%= @movie_info.summary %>
 

@@ -1,6 +1,6 @@
 <h1>Welcome <%= current_user.email %>!</h1>
 
-<%= button_to 'Discover Movies' %>
+<%= button_to 'Discover Movies', discover_index_path, method: :get %>
 
 <section class="friends">
   <h3>Friends</h3>

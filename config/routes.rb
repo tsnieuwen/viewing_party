@@ -5,13 +5,16 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   #users
-  resources :users, only: [:new, :create] 
-  
+  resources :users, only: [:new, :create]
+
   #friends
   resources :friendships, only: [:new, :create]
-  
+
   #dashboard
   get '/dashboard', to: 'dashboard#index'
+
+  #discover
+  resources :discover, only: [:index]
 
   #profile
   get '/profile', to: 'users#show'
@@ -26,5 +29,8 @@ Rails.application.routes.draw do
 
   #movies
   resources :movies, only: [:index, :show]
+
+  #party
+  resources :parties, only: [:new, :create]
 
 end
