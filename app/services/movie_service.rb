@@ -10,7 +10,7 @@ class MovieService
 	def self.top_rated_movies
 		movies = []
 	  for page_num in (1..2) do
-      url = "https://api.themoviedb.org/3/movie/top_rated?api_key=e15cc364b3eed6a09d12d9f9003b553c&language=en-US&page=" + "#{page_num}"
+      url = "https://api.themoviedb.org/3/movie/top_rated?api_key=#{Figaro.env.api_key}&language=en-US&page=" + "#{page_num}"
       response = Faraday.get(url)
       parsed = JSON.parse(response.body, symbolize_names:true)
       movies = movies + parsed[:results]
@@ -23,7 +23,7 @@ class MovieService
 	def self.matched_movies(text)
 		movies = []
 		for page_num in (1..20) do
-			url = "https://api.themoviedb.org/3/search/movie?api_key=e15cc364b3eed6a09d12d9f9003b553c&language=en-US&query=#{text}&page=#{page_num}&include_adult=false"
+			url = "https://api.themoviedb.org/3/search/movie?api_key=#{Figaro.env.api_key}&language=en-US&query=#{text}&page=#{page_num}&include_adult=false"
 			response = Faraday.get(url)
 			parsed = JSON.parse(response.body, symbolize_names:true)
 			movies = movies + parsed[:results]
@@ -38,7 +38,7 @@ class MovieService
 	end
 
 	def self.show_movie(api_id)
-		response = Faraday.get("https://api.themoviedb.org/3/movie/#{api_id}?api_key=e15cc364b3eed6a09d12d9f9003b553c&language=en-US")
+		response = Faraday.get("https://api.themoviedb.org/3/movie/#{api_id}?api_key=#{Figaro.env.api_key}&language=en-US")
 		parsed = JSON.parse(response.body, symbolize_names:true)
 		ShowMovie.new(parsed)
 	end
@@ -46,7 +46,7 @@ class MovieService
 	def self.reviews(api_id)
 		reviews = []
 		for page_num in (1..10) do
-			url = ("https://api.themoviedb.org/3/movie/#{api_id}/reviews?api_key=e15cc364b3eed6a09d12d9f9003b553c&language=en-US&page=#{page_num}")
+			url = ("https://api.themoviedb.org/3/movie/#{api_id}/reviews?api_key=#{Figaro.env.api_key}&language=en-US&page=#{page_num}")
 			response = Faraday.get(url)
 			parsed = JSON.parse(response.body, symbolize_names:true)
 			reviews = reviews + parsed[:results]
@@ -55,7 +55,7 @@ class MovieService
 	end
 
 	def self.cast(api_id)
-		response = Faraday.get("https://api.themoviedb.org/3/movie/#{api_id}/credits?api_key=e15cc364b3eed6a09d12d9f9003b553c&language=en-U")
+		response = Faraday.get("https://api.themoviedb.org/3/movie/#{api_id}/credits?api_key=#{Figaro.env.api_key}&language=en-U")
 		parsed = JSON.parse(response.body, symbolize_names:true)
 		parsed[:cast][0..9]
 	end
