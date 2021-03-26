@@ -13,8 +13,9 @@ RSpec.describe 'As an authenticated user' do
     expect(page).to have_content("Adventure")
     expect(page).to have_content("Animation")
     expect(page).to have_content("Fantasy")
-    expect(page).to have_content("Summary")
-    expect(page).to have_content("Reviews")
+    expect(page).to have_content("The Fellowship of the Ring embark")
+    expect(page).to have_content("Total Reviews: 0")
+    expect(page).to have_content("Christopher Guard as Frodo")
     end
     end
   end
