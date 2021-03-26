@@ -30,6 +30,9 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
+# DB Visualization
+gem 'active_designer', '~> 0.0.3'
+
 group :development, :test do
   gem 'pry'
   gem 'travis'

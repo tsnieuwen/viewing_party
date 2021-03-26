@@ -24,6 +24,7 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_designer (0.0.3)
     activejob (5.2.4.3)
       activesupport (= 5.2.4.3)
       globalid (>= 0.3.6)
@@ -135,7 +136,6 @@ GEM
     mimemagic (0.3.8)
       nokogiri (~> 1)
     mini_mime (1.0.2)
-    mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)
     multi_json (1.15.0)
@@ -143,8 +143,9 @@ GEM
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
     nio4r (2.5.7)
-    nokogiri (1.11.2)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.11.2-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.11.2-x86_64-linux)
       racc (~> 1.4)
     parallel (1.20.1)
     parser (3.0.0.0)
@@ -293,6 +294,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  active_designer (~> 0.0.3)
   autoprefixer-rails
   bcrypt
   bootsnap
@@ -328,4 +330,4 @@ RUBY VERSION
    ruby 2.5.3p105
 
 BUNDLED WITH
-   2.1.4
+   2.2.13
