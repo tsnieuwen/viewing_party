@@ -46,8 +46,26 @@ RSpec.describe 'As an authenticated user' do
       expect(page).to have_content('Vote Average:')
       end
     end
-    it 'Has search text field for movie'
-    it 'Search brings me to movies page'
+
+    it 'Has search text field for movie' do
+      visit discover_index_path
+
+      expect(page).to have_field('search')
+      expect(page).to have_xpath("//input[@value='Search by movie title']")
+      expect(page).to have_button('Find Movies')
+    end
+
+    it 'Search brings me to movies page' do
+      VCR.use_cassette('Find Movies 1') do
+        visit discover_index_path
+
+        fill_in :search, with: 'GoodFellas'
+        click_button 'Find Movies'
+        expect(page).to have_link('GoodFellas')
+        expect(page).to have_content('Vote Average:')
+      end 
+    end
+
   end
 end
 
