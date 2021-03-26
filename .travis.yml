@@ -9,6 +9,6 @@ script:
 - bundle exec rspec
 deploy:
   provider: heroku
-  api_key:
+  api_key: 1a790994281b454e8b37847a47fcc40b
   app: damp-fjord-30128
   run: rails db:migrate
