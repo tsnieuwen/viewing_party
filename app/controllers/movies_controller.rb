@@ -2,8 +2,11 @@ class MoviesController < ApplicationController
   before_action :populate_movie_record, only: [:show]
 
   def index
-    # @movies = MovieService.top_rated_movies
-    @movies = MovieService.forty_match_movies(params[:search])
+    if params[:q] == 'top_rated'
+      @movies = MovieService.top_rated_movies
+    else
+      @movies = MovieService.forty_match_movies(params[:search])
+    end
   end
 
   def show

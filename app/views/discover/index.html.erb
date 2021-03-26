@@ -1,0 +1,11 @@
+<h1>Hello <%= current_user.email %>!</h1>
+
+<%= button_to 'Find Top Rated Movies', movies_path,
+ params: { q: :top_rated }, method: :get %>
+
+<h3>OR</h3>
+
+<%= form_with url: movies_path, method: :get, local: true do |form| %>
+  <%= form.text_field(:search, value: ("Search by movie title"))%><br>
+  <%= form.submit('Find Movies') %>
+<% end %>
