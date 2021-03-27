@@ -10,4 +10,8 @@
 
 <section class="parties">
   <h3>Viewing Parties</h3>
+  <%= require "pry"; binding.pry %>
+  <% current_user.parties.each do |party| %>
+    <%= party.movie %>
+  <% end %>
 </section>

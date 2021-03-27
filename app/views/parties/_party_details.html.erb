@@ -4,7 +4,6 @@
   <%= form.number_field :duration, required: true,
   value: movie.runtime, min: movie.runtime  %><br>
   <%= form.hidden_field(:movie_id, value: movie.api_id) %>
-
   <%= form.label 'Day: ' %>
   <%= form.date_select :day, selected: Date.today,
   min: Date.today, max: 1.year.from_now %><br>
@@ -14,6 +13,11 @@
   <%= form.number_field :minute, min: 0, max: 59, value: 0 %>
   <%= form.select :am_pm, ["AM", "PM"] %>
 
+  <h4>Include</h4>
 
+  <% friends.each do |friend| %>
+  <%= form.check_box friend.id, {:class => "myclass", :style => "mystyle"}, "invited", "not-invited" %>
+  <%= form.label "#{friend.email}" %>
+  <% end %>
   <%= form.submit('Create Party') %>
 <% end %>

@@ -1,4 +1,4 @@
 <h1>Hello <%= current_user.email %>!</h1>
 
 <%= render partial: 'party_details',
-locals: { movie: @movie } %>
+locals: { movie: @movie, friends: current_user.friends } %>

@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'As an authenticated user' do
   before :each do
+    User.destroy_all
     @friend1 = User.create(
       email: 'greatfriend@example.com',
       password: '1223'
@@ -29,7 +30,7 @@ RSpec.describe 'As an authenticated user' do
       VCR.use_cassette('single_movie_details2') do
         visit movie_path("#{Figaro.env.movie_details}")
         click_button 'Create Viewing Party for The Lord of the Rings'
-        
+
         expect(page).to have_content('Movie Title: The Lord of the Rings')
         expect(page).to have_field('duration', with: 132)
         expect(page).to have_field('_day_1i')
@@ -39,11 +40,11 @@ RSpec.describe 'As an authenticated user' do
       end
     end
 
-    it 'Party should not be created if duration less than that of movie' do 
+    it 'Party should not be created if duration less than that of movie' do
       VCR.use_cassette('single_movie_details2') do
         visit movie_path("#{Figaro.env.movie_details}")
         click_button 'Create Viewing Party for The Lord of the Rings'
-        
+
         expect(page).to have_xpath("//input[@min='132']")
       end
     end
@@ -59,6 +60,8 @@ RSpec.describe 'As an authenticated user' do
         fill_in :hour, with: "4"
         fill_in :minute, with: "30"
         select('PM', from: 'am_pm')
+        find(:xpath, "//input[@name=#{@friend1.id}]").set(true)
+        find(:xpath, "//input[@name=#{@friend2.id}]").set(true)
         click_button('Create Party')
 
         expect(current_path).to eq(dashboard_path)
@@ -79,18 +82,18 @@ end
 
 # As an authenticated user,
 # When I visit the new viewing party page,
-# I should see the name of the movie title 
+# I should see the name of the movie title
 # rendered above a form with the following fields:
 
-#  Duration of Party with a default value of 
-#  movie runtime in minutes; a viewing party should 
+#  Duration of Party with a default value of
+#  movie runtime in minutes; a viewing party should
 #  NOT be created if set to a value less than the duration of the movie
 #  When: field to select date
 #  Start Time: field to select time
-#  Checkboxes next to each friend 
+#  Checkboxes next to each friend
 #  (if user has friends)
 #  Button to create a party
-# Details When the party is created, 
-# the authenticated user should be redirected back to 
-# the dashboard where the new event is shown. The event 
+# Details When the party is created,
+# the authenticated user should be redirected back to
+# the dashboard where the new event is shown. The event
 # should also be seen by any friends that were invited when they log in.
