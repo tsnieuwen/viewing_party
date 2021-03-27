@@ -33,7 +33,9 @@ RSpec.describe 'As an authenticated user' do
         expect(page).to have_content('Movie Title: The Lord of the Rings')
         expect(page).to have_field('duration', with: 132)
         expect(page).to have_field('_day_1i')
-        expect(page).to have_field('_start_time_4i')
+        expect(page).to have_field('am_pm')
+        expect(page).to have_field :minute
+        expect(page).to have_field :hour
       end
     end
 
@@ -45,7 +47,31 @@ RSpec.describe 'As an authenticated user' do
         expect(page).to have_xpath("//input[@min='132']")
       end
     end
-    it 'Should redirect to the dashboard where new event is shown'
+
+    it 'Should redirect to the dashboard where new event is shown' do
+      VCR.use_cassette('single_movie_details2') do
+        visit movie_path("#{Figaro.env.movie_details}")
+        click_button 'Create Viewing Party for The Lord of the Rings'
+
+        select('April', from: '_day_2i')
+        select('2021', from: '_day_1i')
+        select('20', from: '_day_3i')
+        fill_in :hour, with: "4"
+        fill_in :minute, with: "30"
+        select('PM', from: 'am_pm')
+        click_button('Create Party')
+
+        expect(current_path).to eq(dashboard_path)
+
+        within('.parties') do
+          expect(page).to have_content('The Lord of the Rings')
+          expect(page).to have_content('April 20 2021')
+          expect(page).to have_content('4:30 PM')
+          expect(page).to have_content('Hosting')
+        end
+      end
+    end
+
     it 'Friends should be able to log in and see event'
     it 'Cant create party in the past'
   end

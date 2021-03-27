@@ -10,7 +10,10 @@
   min: Date.today, max: 1.year.from_now %><br>
 
   <%= form.label 'Start Time: ' %>
-  <%= form.time_select :start_time, { ampm: true } %>
+  <%= form.number_field :hour, min: 1, max: 12, value: 1 %>
+  <%= form.number_field :minute, min: 0, max: 59, value: 0 %>
+  <%= form.select :am_pm, ["AM", "PM"] %>
+
 
   <%= form.submit('Create Party') %>
 <% end %>
