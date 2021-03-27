@@ -33,5 +33,5 @@ Metrics/AbcSize:
 Rails/UniqueValidationWithoutIndex:
   Enabled: false
 
-Layout/IndentationStyle:
-  Enabled: false
+# Layout/IndentationStyle:
+#   Enabled: false
