@@ -18,14 +18,29 @@ RSpec.describe 'As an authenticated user' do
       email: 'foo@bar.com',
       password: 'test'
     )
+    @user.friends << @friend1
+    @user.friends << @friend2
+    @user.friends << @friend3
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
   end
 
   describe 'When I visit a new viewing party page' do
-    it 'I should see movie title, duration with default runtime in mins'
+    it 'I should see movie title, duration with default runtime in mins' do
+      VCR.use_cassette('single_movie_details2') do
+        visit movie_path("#{Figaro.env.movie_details}")
+        click_button 'Create Viewing Party for The Lord of the Rings'
+
+        expect(page).to have_content('Movie Title: The Lord of the Rings')
+        expect(page).to have_field('duration', with: 132)
+        expect(page).to have_field('_day_1i')
+        expect(page).to have_field('_start_time_4i')
+    end
+  end
     it 'Party should not be created if duration less than that of movie' 
     it 'Should redirect to the dashboard where new event is shown'
     it 'Friends should be able to log in and see event'
+    it 'Cant create party in the past'
+  end
 end
 
 # As an authenticated user,

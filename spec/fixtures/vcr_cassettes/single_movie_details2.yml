@@ -1,0 +1,815 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - c33f1ae3ad898e8abd8e3235daac6c22b7770a22
+      X-Memc-Age:
+      - '15311'
+      X-Memc-Expires:
+      - '6289'
+      Etag:
+      - W/"66061bf4d1bccc792d4cde86d5d16351"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 293f01eb5e44c6051948fdc2f3e7eb07.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - grLwbph0K7Ajd8zIrFuaB6-0Xjs_TyTMvNY48VqyyfB341rA3w3_ag==
+      Age:
+      - '76'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/jOuCWdh0BE6XPu2Vpjl08wDAeFz.jpg","belongs_to_collection":null,"budget":4000000,"genres":[{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"}],"homepage":"","id":123,"imdb_id":"tt0077869","original_language":"en","original_title":"The
+        Lord of the Rings","overview":"The Fellowship of the Ring embark on a journey
+        to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":18.911,"poster_path":"/4O3s0IGZJirPBecqEnP9qsjlTQw.jpg","production_companies":[{"id":286,"logo_path":null,"name":"Fantasy
+        Films","origin_country":""},{"id":4921,"logo_path":null,"name":"Bakshi Productions","origin_country":""},{"id":141322,"logo_path":null,"name":"Saul
+        Zaentz Film Productions","origin_country":""}],"production_countries":[{"iso_3166_1":"ES","name":"Spain"},{"iso_3166_1":"GB","name":"United
+        Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1978-11-15","revenue":30471420,"runtime":132,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fantasy...beyond
+        your imagination","title":"The Lord of the Rings","video":false,"vote_average":6.5,"vote_count":541}'
+  recorded_at: Sat, 27 Mar 2021 15:56:29 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 8c90b1c00714fe68ef71fe3114e0c72fcb78a229
+      X-Memc-Age:
+      - '19854'
+      X-Memc-Expires:
+      - '1746'
+      Etag:
+      - W/"efaf808243194fc5a6fabad65ed9db15"
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 d94b2ce686462d2b3be07bc045c3cd75.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - O-t8wOjgMSlU7k_Sp0VR0Xsqyg2oNr28FHs8p4BJ_mMWO6Yk-j8yPw==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":1,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:29 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 2b700ef06cefe972d1793345568051aa20142ffa
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 51f43f7212ad8e67ae9503b19380b67c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - VW6_nFRZujXpgbjy-AOc3MAR-01oDQqvFnUC3f16AaQ7o0cZ_lOJOw==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":2,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:29 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - f9c4a6807138293d15bb70ac4da9ba63d9086e03
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 587df865a35cb229596229a4949116ae.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - c4HCr-ostCo5ePBoMuoQpqg7QPXN7I3g-a2ZLok1oJKmbkqHzGR5ew==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":3,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:29 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - be3df4bc66d85cc6bfa48d2eaa5becb49abe7036
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 d94b2ce686462d2b3be07bc045c3cd75.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - p9w7BEdOHM6Q4_ZtcNiMXGLukALfCBFZnXq7Hz-cgQNIUkf4Vtf09A==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":4,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:29 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - df1fcbba13004b0043b1077fa67a0c2930070fe5
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 9cfb0c812e907426eddd8ac307c4b148.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - ykXw2fzQqjTAtS0jkfiHsj-TMDTyAqUaL16Z5wbhAJOfKQ3LdALR0w==
+      Age:
+      - '77'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":5,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:14 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - e80f3b19fb7bf0e000ea04a0132069a0d0689544
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 0197c39d926d2676e97624a6fd93455c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - IVMU9fjvefSdDoOgS9OogBbZbNp3KcXxu64kJHd-cSj2UMpkbWE1Jw==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":6,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:14 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 2bb7327ffbdcd1d205d8237ae3f4a8a807fa5e07
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 9a6e57455b553fa4fa657bcdde8c1057.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - KUlQgW_cSoyd0LtlrXiYC72BnQBAd3wyBBPPm4YimS-cENsLAiBS_A==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":7,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:14 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 1d697b7d4e12f94a9d9622ef51a973b4de73cea6
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 0a6c40f72bc055604b9d27a4570daa1b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - RF_9KgOuUoxXfmEP72X8SoaN9ChX_Pq7XSuEm_WzYAe6xMtxrkLc_A==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":8,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:14 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - cc2954e768de3fd068a0834cfb52218d0681b238
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 cecfcef7ae62d958f896ff85bb8291eb.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - XUBcnRxb5mjvBRIxvg9phlbPn9hoMq0nYlPytDhoy4MqSGUnHe7OLw==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":9,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/reviews?api_key=DONT_LOOK&language=en-US&page=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '67'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:14 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 5b90991c5e1802a8459b62665033ba3e6623bc14
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 7893def1fcfa053ac53965f46f4728ee.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - YWPBnSNWlU7gX1KfuRVO8mjZF3Yb7UAuKOTdEsBrrIqJWHQIu1dDyA==
+      Age:
+      - '76'
+    body:
+      encoding: UTF-8
+      string: '{"id":123,"page":10,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Sat, 27 Mar 2021 15:56:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123/credits?api_key=DONT_LOOK&language=en-U
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:14 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 3950435e38ae74e875530a76856a74ac5b0dbd6a
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-04 14:56:42 +0000'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 62223de0c21500c1b860f7e075e09f40.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - Yurat7cNyM4FsXa9PdLcsngXx5HbIvhcT-HLtc7Xtoy_F7zGPtA4GA==
+      Age:
+      - '76'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6MTIzLCJjYXN0IjpbeyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjE2MjcwLCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJDaHJpc3RvcGhlciBHdWFyZCIsIm9yaWdpbmFsX25hbWUiOiJDaHJpc3RvcGhlciBHdWFyZCIsInBvcHVsYXJpdHkiOjEuNCwicHJvZmlsZV9wYXRoIjoiLzlmaUJScUtvdDV4WG5ndGpRR0pxMENkWnZZcC5qcGciLCJjYXN0X2lkIjoxLCJjaGFyYWN0ZXIiOiJGcm9kbyAodm9pY2UpIiwiY3JlZGl0X2lkIjoiNTJmZTQyMWJjM2EzNjg0N2Y4MDA0N2RmIiwib3JkZXIiOjB9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjoxNjI3MSwia25vd25fZm9yX2RlcGFydG1lbnQiOiJBY3RpbmciLCJuYW1lIjoiV2lsbGlhbSBTcXVpcmUiLCJvcmlnaW5hbF9uYW1lIjoiV2lsbGlhbSBTcXVpcmUiLCJwb3B1bGFyaXR5IjowLjg0LCJwcm9maWxlX3BhdGgiOiIvazNIUFdzbHhJYWhHS292dVFMZ3ZrM0N1QjhpLmpwZyIsImNhc3RfaWQiOjIsImNoYXJhY3RlciI6IkdhbmRhbGYgKHZvaWNlKSIsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDdlMyIsIm9yZGVyIjoxfSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjowLCJpZCI6MTYyNzIsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiQWN0aW5nIiwibmFtZSI6Ik1pY2hhZWwgU2Nob2xlcyIsIm9yaWdpbmFsX25hbWUiOiJNaWNoYWVsIFNjaG9sZXMiLCJwb3B1bGFyaXR5IjowLjYsInByb2ZpbGVfcGF0aCI6bnVsbCwiY2FzdF9pZCI6MywiY2hhcmFjdGVyIjoiU2FtICh2b2ljZSkiLCJjcmVkaXRfaWQiOiI1MmZlNDIxYmMzYTM2ODQ3ZjgwMDQ3ZTciLCJvcmRlciI6Mn0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjUwNDksImtub3duX2Zvcl9kZXBhcnRtZW50IjoiQWN0aW5nIiwibmFtZSI6IkpvaG4gSHVydCIsIm9yaWdpbmFsX25hbWUiOiJKb2huIEh1cnQiLCJwb3B1bGFyaXR5Ijo1LjYyNywicHJvZmlsZV9wYXRoIjoiL2tMVzFRNTNOUnVCMEVpaGR1QkZYM0xidGNsNi5qcGciLCJjYXN0X2lkIjo0LCJjaGFyYWN0ZXIiOiJBcmFnb3JuICh2b2ljZSkiLCJjcmVkaXRfaWQiOiI1MmZlNDIxYmMzYTM2ODQ3ZjgwMDQ3ZWIiLCJvcmRlciI6M30seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjE2MjczLCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJTaW1vbiBDaGFuZGxlciIsIm9yaWdpbmFsX25hbWUiOiJTaW1vbiBDaGFuZGxlciIsInBvcHVsYXJpdHkiOjEuNjMxLCJwcm9maWxlX3BhdGgiOiIvdXFpRHJJcDg0VkVKWTN2UENyOTVDeHA0bUtZLmpwZyIsImNhc3RfaWQiOjUsImNoYXJhY3RlciI6Ik1lcnJ5ICh2b2ljZSkiLCJjcmVkaXRfaWQiOiI1MmZlNDIxYmMzYTM2ODQ3ZjgwMDQ3ZWYiLCJvcmRlciI6NH0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjE2Mjc0LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJEb21pbmljIEd1YXJkIiwib3JpZ2luYWxfbmFtZSI6IkRvbWluaWMgR3VhcmQiLCJwb3B1bGFyaXR5IjowLjk5NiwicHJvZmlsZV9wYXRoIjoiL201YXVPUjhpYnhzOWxaZUdIQkVLUUF6cUJrUy5qcGciLCJjYXN0X2lkIjo2LCJjaGFyYWN0ZXIiOiJQaXBwaW4gKHZvaWNlKSIsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDdmMyIsIm9yZGVyIjo1fSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjoyLCJpZCI6MTYyNzUsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiQWN0aW5nIiwibmFtZSI6Ik5vcm1hbiBCaXJkIiwib3JpZ2luYWxfbmFtZSI6Ik5vcm1hbiBCaXJkIiwicG9wdWxhcml0eSI6MC42OTQsInByb2ZpbGVfcGF0aCI6Ii9nV2ltTkI5Q1JKdkUyNHZPZUpiTHBreE9pNHEuanBnIiwiY2FzdF9pZCI6NywiY2hhcmFjdGVyIjoiQmlsYm8gKHZvaWNlKSIsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDdmNyIsIm9yZGVyIjo2fSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjoyLCJpZCI6MTYzODAsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiQWN0aW5nIiwibmFtZSI6Ik1pY2hhZWwgR3JhaGFtIENveCIsIm9yaWdpbmFsX25hbWUiOiJNaWNoYWVsIEdyYWhhbSBDb3giLCJwb3B1bGFyaXR5IjoxLjQsInByb2ZpbGVfcGF0aCI6Ii9vQUxYcTFZNnd0ZGozQXJkbUF3WVJ2QW41WFguanBnIiwiY2FzdF9pZCI6OCwiY2hhcmFjdGVyIjoiQm9yb21pciAodm9pY2UpIiwiY3JlZGl0X2lkIjoiNTJmZTQyMWJjM2EzNjg0N2Y4MDA0N2ZiIiwib3JkZXIiOjd9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjo2LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJBbnRob255IERhbmllbHMiLCJvcmlnaW5hbF9uYW1lIjoiQW50aG9ueSBEYW5pZWxzIiwicG9wdWxhcml0eSI6MS42ODMsInByb2ZpbGVfcGF0aCI6Ii83a1I0a3dYdHZYdHZyc3hXZVgzUUxYNU5TNVYuanBnIiwiY2FzdF9pZCI6OSwiY2hhcmFjdGVyIjoiTGVnb2xhcyAodm9pY2UpIiwiY3JlZGl0X2lkIjoiNTJmZTQyMWJjM2EzNjg0N2Y4MDA0N2ZmIiwib3JkZXIiOjh9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjoxNjM4MSwia25vd25fZm9yX2RlcGFydG1lbnQiOiJBY3RpbmciLCJuYW1lIjoiRGF2aWQgQnVjayIsIm9yaWdpbmFsX25hbWUiOiJEYXZpZCBCdWNrIiwicG9wdWxhcml0eSI6MC45OCwicHJvZmlsZV9wYXRoIjpudWxsLCJjYXN0X2lkIjoxMCwiY2hhcmFjdGVyIjoiR2ltbGkgKHZvaWNlKSIsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDgwMyIsIm9yZGVyIjo5fSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjoyLCJpZCI6MTYzODIsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiQWN0aW5nIiwibmFtZSI6IlBldGVyIFdvb2R0aG9ycGUiLCJvcmlnaW5hbF9uYW1lIjoiUGV0ZXIgV29vZHRob3JwZSIsInBvcHVsYXJpdHkiOjIuMDYyLCJwcm9maWxlX3BhdGgiOiIvbFF5VFpoRGFXNnAzbEFiMGFJS0tHQWlUbUI2LmpwZyIsImNhc3RfaWQiOjExLCJjaGFyYWN0ZXIiOiJHb2xsdW0gKHZvaWNlKSIsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDgwNyIsIm9yZGVyIjoxMH0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MCwiaWQiOjE2MzgzLCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJGcmFzZXIgS2VyciIsIm9yaWdpbmFsX25hbWUiOiJGcmFzZXIgS2VyciIsInBvcHVsYXJpdHkiOjAuNiwicHJvZmlsZV9wYXRoIjpudWxsLCJjYXN0X2lkIjoxMiwiY2hhcmFjdGVyIjoiU2FydW1hbiAodm9pY2UpIiwiY3JlZGl0X2lkIjoiNTJmZTQyMWJjM2EzNjg0N2Y4MDA0ODBiIiwib3JkZXIiOjExfSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjoyLCJpZCI6Njk0LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJQaGlsaXAgU3RvbmUiLCJvcmlnaW5hbF9uYW1lIjoiUGhpbGlwIFN0b25lIiwicG9wdWxhcml0eSI6MC44NCwicHJvZmlsZV9wYXRoIjoiL3dLSXo4TDBUY0trMjZUTkdqN3JLZmdQMDJVRy5qcGciLCJjYXN0X2lkIjoyNywiY2hhcmFjdGVyIjoiVGhlb2RlbiAodm9pY2UpIiwiY3JlZGl0X2lkIjoiNTk1NDIxMzc5MjUxNDEyYjIzMDNlNDY3Iiwib3JkZXIiOjEyfSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjoyLCJpZCI6MTAwMjksImtub3duX2Zvcl9kZXBhcnRtZW50IjoiQWN0aW5nIiwibmFtZSI6IkFuZHLDqSBNb3JlbGwiLCJvcmlnaW5hbF9uYW1lIjoiQW5kcsOpIE1vcmVsbCIsInBvcHVsYXJpdHkiOjEuMDc5LCJwcm9maWxlX3BhdGgiOiIvM1lwQVVpdUxwOVpYTDY3Vzk5VzJYWWRKM3NlLmpwZyIsImNhc3RfaWQiOjEzLCJjaGFyYWN0ZXIiOiJFbHJvbmQgKHZvaWNlKSIsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDgwZiIsIm9yZGVyIjoxM30seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjEyODI4LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJBbGFuIFRpbHZlcm4iLCJvcmlnaW5hbF9uYW1lIjoiQWxhbiBUaWx2ZXJuIiwicG9wdWxhcml0eSI6MS40LCJwcm9maWxlX3BhdGgiOiIvNlMxV0hLemZMdzAyZkZLamlOOUxwdllNNFhVLmpwZyIsImNhc3RfaWQiOjI1LCJjaGFyYWN0ZXIiOiJJbm5rZWVwZXIgKHZvaWNlKSIsImNyZWRpdF9pZCI6IjU5NTQyMGI1YzNhMzY4MTRhZTA0MzliZSIsIm9yZGVyIjoxNH0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MSwiaWQiOjU1Njg4LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJBbm5ldHRlIENyb3NiaWUiLCJvcmlnaW5hbF9uYW1lIjoiQW5uZXR0ZSBDcm9zYmllIiwicG9wdWxhcml0eSI6MS41MjYsInByb2ZpbGVfcGF0aCI6Ii8xWnV5VFpiVkpSZko2SHh4SEwwWGNMOUdLWW8uanBnIiwiY2FzdF9pZCI6MjYsImNoYXJhY3RlciI6IkdhbGFkcmllbCAodm9pY2UpIiwiY3JlZGl0X2lkIjoiNTk1NDIwY2NjM2EzNjgwOWM2MDQwMzIzIiwib3JkZXIiOjE1fSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjowLCJpZCI6MTExMzMwLCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFjdGluZyIsIm5hbWUiOiJNaWNoYWVsIERlYWNvbiIsIm9yaWdpbmFsX25hbWUiOiJNaWNoYWVsIERlYWNvbiIsInBvcHVsYXJpdHkiOjAuOTgsInByb2ZpbGVfcGF0aCI6bnVsbCwiY2FzdF9pZCI6MjgsImNoYXJhY3RlciI6Ildvcm10b25ndWUgKHZvaWNlKSIsImNyZWRpdF9pZCI6IjU5NTQyMTk4OTI1MTQxMmIzMTA0MGE5ZiIsIm9yZGVyIjoxNn0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjEwMTUxMiwia25vd25fZm9yX2RlcGFydG1lbnQiOiJBY3RpbmciLCJuYW1lIjoiSm9obiBXZXN0YnJvb2siLCJvcmlnaW5hbF9uYW1lIjoiSm9obiBXZXN0YnJvb2siLCJwb3B1bGFyaXR5IjowLjgyOCwicHJvZmlsZV9wYXRoIjpudWxsLCJjYXN0X2lkIjoyOSwiY2hhcmFjdGVyIjoiVHJlZWJlYXJkICh2b2ljZSkiLCJjcmVkaXRfaWQiOiI1OTU0MjFhOGMzYTM2ODM1MjYwMjIyNDkiLCJvcmRlciI6MTd9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjoxMjY1OSwia25vd25fZm9yX2RlcGFydG1lbnQiOiJBY3RpbmciLCJuYW1lIjoiQmlsbHkgQmFydHkiLCJvcmlnaW5hbF9uYW1lIjoiQmlsbHkgQmFydHkiLCJwb3B1bGFyaXR5IjowLjkwNywicHJvZmlsZV9wYXRoIjoiL3RzT3J1RTM2bXJ0ZUJmVlNGc2Vnb0pCU0ZRUy5qcGciLCJjYXN0X2lkIjozMCwiY2hhcmFjdGVyIjoiQ2hhcmFjdGVyIEFjdG9yICh2b2ljZSkiLCJjcmVkaXRfaWQiOiI1YjFiZjcxZmMzYTM2ODQ4ZjIwMjUwZTciLCJvcmRlciI6MTh9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjoxMjcxOTMsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiQWN0aW5nIiwibmFtZSI6IkplcnJ5IE1hcmVuIiwib3JpZ2luYWxfbmFtZSI6IkplcnJ5IE1hcmVuIiwicG9wdWxhcml0eSI6MC44OCwicHJvZmlsZV9wYXRoIjoiL3JncVNxclZrQ3NVcEtjY1o5Z2VtZ1pJRWlYWi5qcGciLCJjYXN0X2lkIjozMSwiY2hhcmFjdGVyIjoiQ2hhcmFjdGVyIEFjdG9yICh2b2ljZSkiLCJjcmVkaXRfaWQiOiI1YjFiZjczOTBlMGEyNjc2NGUwMDg1ZDQiLCJvcmRlciI6MTl9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjoxMTQyMzIsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiQWN0aW5nIiwibmFtZSI6IkNodWNrIEhheXdhcmQiLCJvcmlnaW5hbF9uYW1lIjoiQ2h1Y2sgSGF5d2FyZCIsInBvcHVsYXJpdHkiOjAuNiwicHJvZmlsZV9wYXRoIjoiLzdBa2swaTdHVEppN1ZpV0FxdDAwc01aUWZHby5qcGciLCJjYXN0X2lkIjozMiwiY2hhcmFjdGVyIjoiQ2hhcmFjdGVyIEFjdG9yICh2b2ljZSkiLCJjcmVkaXRfaWQiOiI1YmFlYjQyMTkyNTE0MTUwZjEwNWM1ZmYiLCJvcmRlciI6MjB9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjoxODg4OSwia25vd25fZm9yX2RlcGFydG1lbnQiOiJDcmV3IiwibmFtZSI6Ik1pYyBSb2RnZXJzIiwib3JpZ2luYWxfbmFtZSI6Ik1pYyBSb2RnZXJzIiwicG9wdWxhcml0eSI6MS40LCJwcm9maWxlX3BhdGgiOiIvekdoV2hpVGZ6ZVN6Zkt0OWtLNEJrNlpTMHhuLmpwZyIsImNhc3RfaWQiOjQzLCJjaGFyYWN0ZXIiOiJDaGFyYWN0ZXIgQWN0b3IgKHZvaWNlKSIsImNyZWRpdF9pZCI6IjVmZWYzYjk1MTQwYmFkMDAzY2E0ZjRlNyIsIm9yZGVyIjoyMX1dLCJjcmV3IjpbeyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjEzMTAsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiUHJvZHVjdGlvbiIsIm5hbWUiOiJTYXVsIFphZW50eiIsIm9yaWdpbmFsX25hbWUiOiJTYXVsIFphZW50eiIsInBvcHVsYXJpdHkiOjAuNiwicHJvZmlsZV9wYXRoIjpudWxsLCJjcmVkaXRfaWQiOiI1MmZlNDIxYmMzYTM2ODQ3ZjgwMDQ4MzMiLCJkZXBhcnRtZW50IjoiUHJvZHVjdGlvbiIsImpvYiI6IlByb2R1Y2VyIn0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjEyOSwia25vd25fZm9yX2RlcGFydG1lbnQiOiJXcml0aW5nIiwibmFtZSI6IkouUi5SLiBUb2xraWVuIiwib3JpZ2luYWxfbmFtZSI6IkouUi5SLiBUb2xraWVuIiwicG9wdWxhcml0eSI6Mi4yNjIsInByb2ZpbGVfcGF0aCI6Ii95dk5GQ09HOUpUSmRXMXl4c0xhMmhyYU03TVAuanBnIiwiY3JlZGl0X2lkIjoiNTJmZTQyMWJjM2EzNjg0N2Y4MDA0ODFiIiwiZGVwYXJ0bWVudCI6IldyaXRpbmciLCJqb2IiOiJOb3ZlbCJ9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjoxNjM4NCwia25vd25fZm9yX2RlcGFydG1lbnQiOiJEaXJlY3RpbmciLCJuYW1lIjoiUmFscGggQmFrc2hpIiwib3JpZ2luYWxfbmFtZSI6IlJhbHBoIEJha3NoaSIsInBvcHVsYXJpdHkiOjAuNjU2LCJwcm9maWxlX3BhdGgiOiIvcW5FZDZrcmpwVzlibENOQTkwaXcwQVI1OGRSLmpwZyIsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDgxNSIsImRlcGFydG1lbnQiOiJEaXJlY3RpbmciLCJqb2IiOiJEaXJlY3RvciJ9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjAsImlkIjoxNjM4NSwia25vd25fZm9yX2RlcGFydG1lbnQiOiJXcml0aW5nIiwibmFtZSI6IkNocmlzIENvbmtsaW5nIiwib3JpZ2luYWxfbmFtZSI6IkNocmlzIENvbmtsaW5nIiwicG9wdWxhcml0eSI6MC42LCJwcm9maWxlX3BhdGgiOm51bGwsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDgyMSIsImRlcGFydG1lbnQiOiJXcml0aW5nIiwiam9iIjoiU2NyZWVucGxheSJ9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjIsImlkIjoxNjM4Niwia25vd25fZm9yX2RlcGFydG1lbnQiOiJXcml0aW5nIiwibmFtZSI6IlBldGVyIFMuIEJlYWdsZSIsIm9yaWdpbmFsX25hbWUiOiJQZXRlciBTLiBCZWFnbGUiLCJwb3B1bGFyaXR5IjoxLjM4LCJwcm9maWxlX3BhdGgiOm51bGwsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDgyNyIsImRlcGFydG1lbnQiOiJXcml0aW5nIiwiam9iIjoiU2NyZWVucGxheSJ9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjAsImlkIjoxNjM4Nywia25vd25fZm9yX2RlcGFydG1lbnQiOiJQcm9kdWN0aW9uIiwibmFtZSI6Ik5hbmN5IEVpY2hsZXIiLCJvcmlnaW5hbF9uYW1lIjoiTmFuY3kgRWljaGxlciIsInBvcHVsYXJpdHkiOjAuNiwicHJvZmlsZV9wYXRoIjpudWxsLCJjcmVkaXRfaWQiOiI1MmZlNDIxYmMzYTM2ODQ3ZjgwMDQ4MmQiLCJkZXBhcnRtZW50IjoiUHJvZHVjdGlvbiIsImpvYiI6IlByb2R1Y2VyIn0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjIwMjcsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiU291bmQiLCJuYW1lIjoiTGVvbmFyZCBSb3Nlbm1hbiIsIm9yaWdpbmFsX25hbWUiOiJMZW9uYXJkIFJvc2VubWFuIiwicG9wdWxhcml0eSI6MC42LCJwcm9maWxlX3BhdGgiOm51bGwsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDgzOSIsImRlcGFydG1lbnQiOiJTb3VuZCIsImpvYiI6Ik9yaWdpbmFsIE11c2ljIENvbXBvc2VyIn0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjE2Mzg5LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkRpcmVjdGluZyIsIm5hbWUiOiJUaW1vdGh5IEdhbGZhcyIsIm9yaWdpbmFsX25hbWUiOiJUaW1vdGh5IEdhbGZhcyIsInBvcHVsYXJpdHkiOjAuNiwicHJvZmlsZV9wYXRoIjpudWxsLCJjcmVkaXRfaWQiOiI1MmZlNDIxYmMzYTM2ODQ3ZjgwMDQ4M2YiLCJkZXBhcnRtZW50IjoiQ2FtZXJhIiwiam9iIjoiRGlyZWN0b3Igb2YgUGhvdG9ncmFwaHkifSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjoyLCJpZCI6MTYzOTAsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiRWRpdGluZyIsIm5hbWUiOiJEb25hbGQgVy4gRXJuc3QiLCJvcmlnaW5hbF9uYW1lIjoiRG9uYWxkIFcuIEVybnN0IiwicG9wdWxhcml0eSI6MC42LCJwcm9maWxlX3BhdGgiOm51bGwsImNyZWRpdF9pZCI6IjUyZmU0MjFiYzNhMzY4NDdmODAwNDg0NSIsImRlcGFydG1lbnQiOiJFZGl0aW5nIiwiam9iIjoiRWRpdG9yIn0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MCwiaWQiOjEyNTc5LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkNhbWVyYSIsIm5hbWUiOiJQaGlsIEJyYXkiLCJvcmlnaW5hbF9uYW1lIjoiUGhpbCBCcmF5IiwicG9wdWxhcml0eSI6MC45OCwicHJvZmlsZV9wYXRoIjpudWxsLCJjcmVkaXRfaWQiOiI1ZjdhZDlkY2ZkZmM5ZjAwMzhhZTE2MmUiLCJkZXBhcnRtZW50IjoiQ2FtZXJhIiwiam9iIjoiU3RpbGwgUGhvdG9ncmFwaGVyIn0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MiwiaWQiOjYwMjUwLCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkFydCIsIm5hbWUiOiJCYXJyeSBFLiBKYWNrc29uIiwib3JpZ2luYWxfbmFtZSI6IkJhcnJ5IEUuIEphY2tzb24iLCJwb3B1bGFyaXR5IjowLjY5NCwicHJvZmlsZV9wYXRoIjpudWxsLCJjcmVkaXRfaWQiOiI1NTYxNGFmMWMzYTM2ODFmOTYwMDBhNTkiLCJkZXBhcnRtZW50IjoiVmlzdWFsIEVmZmVjdHMiLCJqb2IiOiJBbmltYXRpb24gTWFuYWdlciJ9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjAsImlkIjoxMzAwOTE5LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IkVkaXRpbmciLCJuYW1lIjoiUGV0ZXIgS2lyYnkiLCJvcmlnaW5hbF9uYW1lIjoiUGV0ZXIgS2lyYnkiLCJwb3B1bGFyaXR5IjowLjYsInByb2ZpbGVfcGF0aCI6bnVsbCwiY3JlZGl0X2lkIjoiNWY3YWQ5NGYzNDI5ZmYwMDM4YjY4MTk0IiwiZGVwYXJ0bWVudCI6IkVkaXRpbmciLCJqb2IiOiJFZGl0b3IifSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjowLCJpZCI6MTQ0NzU1OSwia25vd25fZm9yX2RlcGFydG1lbnQiOiJWaXN1YWwgRWZmZWN0cyIsIm5hbWUiOiJNaWNraSBadXJjaGVyIiwib3JpZ2luYWxfbmFtZSI6Ik1pY2tpIFp1cmNoZXIiLCJwb3B1bGFyaXR5IjowLjYsInByb2ZpbGVfcGF0aCI6bnVsbCwiY3JlZGl0X2lkIjoiNTUzYWQzYzc5MjUxNDE2NTE4MDBiZjg2IiwiZGVwYXJ0bWVudCI6IlZpc3VhbCBFZmZlY3RzIiwiam9iIjoiQW5pbWF0aW9uIE1hbmFnZXIifSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjowLCJpZCI6MTQ1NTU1OCwia25vd25fZm9yX2RlcGFydG1lbnQiOiJDcmV3IiwibmFtZSI6IkRhbGUgQmFlciIsIm9yaWdpbmFsX25hbWUiOiJEYWxlIEJhZXIiLCJwb3B1bGFyaXR5IjowLjYsInByb2ZpbGVfcGF0aCI6bnVsbCwiY3JlZGl0X2lkIjoiNWY3YWRhN2MwOTE5MWIwMDM4OGFkNmRjIiwiZGVwYXJ0bWVudCI6IlZpc3VhbCBFZmZlY3RzIiwiam9iIjoiS2V5IEFuaW1hdGlvbiJ9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjAsImlkIjoxOTg5NDIyLCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IlNvdW5kIiwibmFtZSI6IkRhbiBTaGFycCIsIm9yaWdpbmFsX25hbWUiOiJEYW4gU2hhcnAiLCJwb3B1bGFyaXR5IjowLjYsInByb2ZpbGVfcGF0aCI6bnVsbCwiY3JlZGl0X2lkIjoiNWY3YWQ5YjVkYTEwZjAwMDM0N2E4YjExIiwiZGVwYXJ0bWVudCI6IlNvdW5kIiwiam9iIjoiQXNzaXN0YW50IFNvdW5kIEVkaXRvciJ9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjAsImlkIjoyMTE1Nzc3LCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IlNvdW5kIiwibmFtZSI6IkNhcmwgTGV3aXMiLCJvcmlnaW5hbF9uYW1lIjoiQ2FybCBMZXdpcyIsInBvcHVsYXJpdHkiOjAuNiwicHJvZmlsZV9wYXRoIjpudWxsLCJjcmVkaXRfaWQiOiI1ZjdhZDk5YTAyMWNlZTAwMzYzYTc3MDciLCJkZXBhcnRtZW50IjoiU291bmQiLCJqb2IiOiJBc3Npc3RhbnQgU291bmQgRWRpdG9yIn0seyJhZHVsdCI6ZmFsc2UsImdlbmRlciI6MCwiaWQiOjI4MDM5NTcsImtub3duX2Zvcl9kZXBhcnRtZW50IjoiRGlyZWN0aW5nIiwibmFtZSI6IkpvaG4gU3BhcmV5Iiwib3JpZ2luYWxfbmFtZSI6IkpvaG4gU3BhcmV5IiwicG9wdWxhcml0eSI6MC42LCJwcm9maWxlX3BhdGgiOm51bGwsImNyZWRpdF9pZCI6IjVmN2FkOTc0MDIxY2VlMDAzNjNhNzZmNiIsImRlcGFydG1lbnQiOiJEaXJlY3RpbmciLCJqb2IiOiJBc3Npc3RhbnQgRGlyZWN0b3IifSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjowLCJpZCI6MjgwMzk2Miwia25vd25fZm9yX2RlcGFydG1lbnQiOiJBcnQiLCJuYW1lIjoiTWFyY2lhIEFkYW1zIiwib3JpZ2luYWxfbmFtZSI6Ik1hcmNpYSBBZGFtcyIsInBvcHVsYXJpdHkiOjAuNiwicHJvZmlsZV9wYXRoIjpudWxsLCJjcmVkaXRfaWQiOiI1ZjdhZDlmNDAyMWNlZTAwMzYzYTc3YzAiLCJkZXBhcnRtZW50IjoiQXJ0Iiwiam9iIjoiUGFpbnRlciJ9LHsiYWR1bHQiOmZhbHNlLCJnZW5kZXIiOjAsImlkIjoyODAzOTYzLCJrbm93bl9mb3JfZGVwYXJ0bWVudCI6IlZpc3VhbCBFZmZlY3RzIiwibmFtZSI6IkNocmlzdG9waGVyIEQuIEFuZHJld3MiLCJvcmlnaW5hbF9uYW1lIjoiQ2hyaXN0b3BoZXIgRC4gQW5kcmV3cyIsInBvcHVsYXJpdHkiOjAuNiwicHJvZmlsZV9wYXRoIjpudWxsLCJjcmVkaXRfaWQiOiI1ZjdhZGExOWRhMTBmMDAwMzQ3YThiZTIiLCJkZXBhcnRtZW50IjoiVmlzdWFsIEVmZmVjdHMiLCJqb2IiOiJBbmltYXRpb24ifSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjowLCJpZCI6MjgwMzk2NCwia25vd25fZm9yX2RlcGFydG1lbnQiOiJWaXN1YWwgRWZmZWN0cyIsIm5hbWUiOiJDcmFpZyBBcm1zdHJvbmciLCJvcmlnaW5hbF9uYW1lIjoiQ3JhaWcgQXJtc3Ryb25nIiwicG9wdWxhcml0eSI6MC42LCJwcm9maWxlX3BhdGgiOm51bGwsImNyZWRpdF9pZCI6IjVmN2FkYTUzOTQ0YTU3MDAzN2NmODU2MCIsImRlcGFydG1lbnQiOiJWaXN1YWwgRWZmZWN0cyIsImpvYiI6IktleSBBbmltYXRpb24ifSx7ImFkdWx0IjpmYWxzZSwiZ2VuZGVyIjowLCJpZCI6MjgwMzk2Niwia25vd25fZm9yX2RlcGFydG1lbnQiOiJWaXN1YWwgRWZmZWN0cyIsIm5hbWUiOiJCcmVuZGEgQmFua3MiLCJvcmlnaW5hbF9uYW1lIjoiQnJlbmRhIEJhbmtzIiwicG9wdWxhcml0eSI6MC42LCJwcm9maWxlX3BhdGgiOm51bGwsImNyZWRpdF9pZCI6IjVmN2FkYTkzM2UyZWM4MDAzN2Q0ZjI0MiIsImRlcGFydG1lbnQiOiJWaXN1YWwgRWZmZWN0cyIsImpvYiI6IktleSBBbmltYXRpb24ifV19
+  recorded_at: Sat, 27 Mar 2021 15:56:30 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 27 Mar 2021 15:55:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - c33f1ae3ad898e8abd8e3235daac6c22b7770a22
+      X-Memc-Age:
+      - '15311'
+      X-Memc-Expires:
+      - '6289'
+      Etag:
+      - W/"66061bf4d1bccc792d4cde86d5d16351"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 587df865a35cb229596229a4949116ae.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - qlCSMy5pcJKlPUX4clCUUPkzMgYXg6CXmT3JrTM-sYJ9NimbhdbHHw==
+      Age:
+      - '77'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/jOuCWdh0BE6XPu2Vpjl08wDAeFz.jpg","belongs_to_collection":null,"budget":4000000,"genres":[{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"}],"homepage":"","id":123,"imdb_id":"tt0077869","original_language":"en","original_title":"The
+        Lord of the Rings","overview":"The Fellowship of the Ring embark on a journey
+        to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":18.911,"poster_path":"/4O3s0IGZJirPBecqEnP9qsjlTQw.jpg","production_companies":[{"id":286,"logo_path":null,"name":"Fantasy
+        Films","origin_country":""},{"id":4921,"logo_path":null,"name":"Bakshi Productions","origin_country":""},{"id":141322,"logo_path":null,"name":"Saul
+        Zaentz Film Productions","origin_country":""}],"production_countries":[{"iso_3166_1":"ES","name":"Spain"},{"iso_3166_1":"GB","name":"United
+        Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1978-11-15","revenue":30471420,"runtime":132,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fantasy...beyond
+        your imagination","title":"The Lord of the Rings","video":false,"vote_average":6.5,"vote_count":541}'
+  recorded_at: Sat, 27 Mar 2021 15:56:30 GMT
+recorded_with: VCR 6.0.0

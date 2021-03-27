@@ -1,9 +1,4 @@
 <h1>Hello <%= current_user.email %>!</h1>
 
-
-<%= form_with url: parties_path, method: :post, local: true do |form| %>
-  <%= form.label(:duration, 'Duration of Party:') %>
-  <%= form.text_field :duration, required: true%><br>
-  <%= form.hidden_field(:movie_id, value: @movie.api_id) %>
-  <%= form.submit('Create Party') %>
-<% end %>
+<%= render partial: 'party_details',
+locals: { movie: @movie } %>

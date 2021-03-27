@@ -1,0 +1,16 @@
+<%= form_with url: parties_path, method: :post, local: true do |form| %>
+  <%= form.label 'Movie Title', "Movie Title: #{movie.title}"  %><br>
+  <%= form.label(:duration, 'Duration of Party:') %>
+  <%= form.number_field :duration, required: true,
+  value: movie.runtime, min: movie.runtime  %><br>
+  <%= form.hidden_field(:movie_id, value: movie.api_id) %>
+
+  <%= form.label 'Day: ' %>
+  <%= form.date_select :day, selected: Date.today,
+  min: Date.today, max: 1.year.from_now %><br>
+
+  <%= form.label 'Start Time: ' %>
+  <%= form.time_select :start_time, { ampm: true } %>
+
+  <%= form.submit('Create Party') %>
+<% end %>
