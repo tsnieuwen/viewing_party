@@ -43,7 +43,7 @@ RSpec.describe 'As an authenticated user' do
 
       click_button('Find Top Rated Movies')
 
-      expect(page).to have_content('Vote Average:')
+      expect(page).to have_content('Vote Average:', count: 40)
       end
     end
 
@@ -63,27 +63,17 @@ RSpec.describe 'As an authenticated user' do
         click_button 'Find Movies'
         expect(page).to have_link('GoodFellas')
         expect(page).to have_content('Vote Average:')
-      end 
+      end
     end
 
+    it 'Search only returns 40 results' do
+      VCR.use_cassette('Find Movies 2') do
+        visit discover_index_path
+
+        fill_in :search, with: 'The'
+        click_button 'Find Movies'
+        expect(page).to have_content('Vote Average:', count: 40)
+      end
+    end
   end
 end
-
-
-
-# As an authenticated user,
-# When I visit the '/discover' path
-# I should see
-#
-#  Button to Discover top 40 movies
-# Details When the user clicks on the
-# top 40 button they should be taken to the movies page.
-#
-#  A text field to enter keyword(s)
-#  to search by movie title
-#  A Button to Search by Movie Title
-# Details When the user clicks on the
-# Search button they should be taken to the movies page
-#
-# The movies will be retrieved by
-# consuming The MovieDB API
