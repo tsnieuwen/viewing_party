@@ -21,5 +21,13 @@ RSpec.describe Movie, type: :model do
         expect(movie.get_details.runtime).to eq(132)
       end
     end
+    it "#send_poster_info" do
+      VCR.use_cassette('movie_model_test2') do
+      movie = Movie.create(
+        api_id: Figaro.env.movie_details
+      )
+      expect(movie.send_poster_info).to eq("https://image.tmdb.org/t/p/w92/4O3s0IGZJirPBecqEnP9qsjlTQw.jpg")
+      end
+    end
   end
 end
