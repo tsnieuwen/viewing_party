@@ -9,4 +9,9 @@ class MatchMovie
     @rating = data[:vote_average]
 	end
 
+  def self.all_movies(input)
+    input.map do |movie|
+      MatchMovie.new(movie)
+    end
+  end
 end

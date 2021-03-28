@@ -10,4 +10,14 @@
 
 <section class="parties">
   <h3>Viewing Parties</h3>
+  <% @parties.each do |party| %>
+    <%= party.movie.get_details.title %><br>
+    <%= party.date %><br>
+    <%= party.start_time %><br>
+    <% if party.host_id == current_user.id %>
+        <p>Hosting</p>
+      <% else %>
+        <p>Invited</p>
+      <% end%>
+  <% end %>
 </section>

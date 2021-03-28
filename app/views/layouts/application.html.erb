@@ -10,6 +10,11 @@
 
   <body>
 
+    <% if logged_in == true %>
+      <%= link_to 'Log Out', logout_path, method: :delete %>
+    <% else %>
+    <% end%>
+
     <% flash.each do |name, message| %>
       <%= message %>
     <% end%>

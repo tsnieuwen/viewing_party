@@ -33,4 +33,7 @@ Rails.application.routes.draw do
   #parties
   resources :parties, only: [:new, :create]
 
+  #user parties
+  resources :user_parties, only: [:new, :create]
+
 end
