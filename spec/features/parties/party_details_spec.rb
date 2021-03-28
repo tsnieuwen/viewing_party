@@ -27,7 +27,11 @@ RSpec.describe 'As an authenticated user' do
   describe 'When Im on my dashboard and hosting a party' do
     it 'Should show title linking to movie show page, date/time, who is hosting, list of friends my name bold' do
       VCR.use_cassette('my_viewing_party') do
-        allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+        visit root_path
+        click_link "I already have an account"
+        fill_in :email, with: @user.email
+        fill_in :password, with: "test"
+        click_button "Log In"
         visit movie_path("#{Figaro.env.movie_details}")
         click_button 'Create Viewing Party for The Lord of the Rings'
 
@@ -50,6 +54,21 @@ RSpec.describe 'As an authenticated user' do
           expect(page).to have_content("#{@friend1.email}")
           expect(page).to have_content("#{@friend2.email}")
           expect(page).to have_content("#{@friend3.email}")
+        end
+        
+        click_link "Log Out"
+        click_link "I already have an account"
+        fill_in :email, with: @friend2.email
+        fill_in :password, with: "4321"
+        click_button "Log In"
+        visit dashboard_path
+        save_and_open_page
+        
+        within('.parties') do
+          expect(page).to have_content("#{@friend1.email}")
+          expect(page).to have_content("#{@friend2.email}")
+          expect(page).to have_content("#{@friend3.email}")
+          expect(page).to have_content("#{@user.email}")
         end
       end
     end
