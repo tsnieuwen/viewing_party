@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
   before_action :populate_movie_record, only: [:show]
+  before_action :authorized, only: [:index, :show]
 
   def index
     if params[:q] == 'top_rated'

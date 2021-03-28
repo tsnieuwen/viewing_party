@@ -1,4 +1,5 @@
 class PartiesController < ApplicationController
+before_action :authorized, only: [:new]
 
   def new
     @movie = MovieService.show_movie(params[:api_id])
@@ -21,7 +22,7 @@ class PartiesController < ApplicationController
     UserParty.invite_friends(invited, party.id)
     redirect_to dashboard_path
   end
-  
+
 
   private
 
