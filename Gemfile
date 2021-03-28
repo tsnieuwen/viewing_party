@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.5'
 # Api
 gem 'faraday'
 gem 'figaro'
-gem 'mimemagic', '~> 0.3.6'
+gem 'mimemagic', '~> 0.3.8'
 
 # Authentication
 gem 'bcrypt'
