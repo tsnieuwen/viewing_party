@@ -1,4 +1,5 @@
 require 'rails_helper'
+#Kris rocks
 
 RSpec.describe "As an authenticated user" do
   describe "When I visit '/dashboard'" do
@@ -28,7 +29,7 @@ RSpec.describe "As an authenticated user" do
       expect(current_path).to eq(dashboard_path)
     end
 
-    it "Has button to discover movies, section for friends and parties" do 
+    it "Has button to discover movies, section for friends and parties" do
       user = User.create(
         email: 'user@example.com',
         password: 'test'
@@ -44,7 +45,7 @@ RSpec.describe "As an authenticated user" do
 
       expect(page).to have_content("Welcome #{user.email}!")
       expect(page).to have_button('Discover Movies')
-      
+
       within('.friends') do
         expect(page).to have_content('Friends')
       end
