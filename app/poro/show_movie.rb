@@ -18,5 +18,4 @@ class ShowMovie
     @vote_average = data[:vote_average]
     @genres = data[:genres]
 	end
-
 end

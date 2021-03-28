@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'As an authenticated user' do
   before :each do
+    UserParty.destroy_all
     User.destroy_all
     @friend1 = User.create(
       email: 'greatfriend@example.com',
