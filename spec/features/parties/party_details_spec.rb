@@ -31,8 +31,6 @@ RSpec.describe 'As an authenticated user' do
         visit movie_path("#{Figaro.env.movie_details}")
         click_button 'Create Viewing Party for The Lord of the Rings'
 
-        click_button 'Create Viewing Party for The Lord of the Rings'
-
         select('April', from: '_day_2i')
         select('2021', from: '_day_1i')
         select('20', from: '_day_3i')
@@ -55,19 +53,5 @@ RSpec.describe 'As an authenticated user' do
         end
       end
     end
-
-
-# As an authenticated user,
-# I should see the viewing parties I have been invited to with the following details:
-
-# Movie Title, which links to the movie show page
-# Date and Time of Event
-# who is hosting the event
-# list of friends invited, with my name in bold
-
-
-# I should also see the viewing parties that I have created with the following details:
-# Movie Title, which links to the movie show page
-# Date and Time of Event
-# That I am the host of the party
-# List of friends invited to the viewing party
+  end
+end

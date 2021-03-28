@@ -5,4 +5,12 @@ class Party < ApplicationRecord
 
   has_many :user_parties
   has_many :users, through: :user_parties
+
+  def find_host(host_id)
+    users.find(host_id)
+  end
+
+  def invited
+    users.where("users.id != ?", self.host_id)
+  end
 end
