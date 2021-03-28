@@ -1,0 +1,279 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 28 Mar 2021 16:39:36 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - c33f1ae3ad898e8abd8e3235daac6c22b7770a22
+      X-Memc-Age:
+      - '16350'
+      X-Memc-Expires:
+      - '5250'
+      Etag:
+      - W/"d26b9ef55366c024a2b91656c88406c4"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 4de3cdbf8046367453bc168e829b445f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - En0jV43ehUcXhKDhbGJCivVTcgZzN5SJ69b8aq-hAqChBDSaVT2JJQ==
+      Age:
+      - '17541'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/jOuCWdh0BE6XPu2Vpjl08wDAeFz.jpg","belongs_to_collection":null,"budget":4000000,"genres":[{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"}],"homepage":"","id":123,"imdb_id":"tt0077869","original_language":"en","original_title":"The
+        Lord of the Rings","overview":"The Fellowship of the Ring embark on a journey
+        to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":19.837,"poster_path":"/4O3s0IGZJirPBecqEnP9qsjlTQw.jpg","production_companies":[{"id":286,"logo_path":null,"name":"Fantasy
+        Films","origin_country":""},{"id":4921,"logo_path":null,"name":"Bakshi Productions","origin_country":""},{"id":141322,"logo_path":null,"name":"Saul
+        Zaentz Film Productions","origin_country":""}],"production_countries":[{"iso_3166_1":"ES","name":"Spain"},{"iso_3166_1":"GB","name":"United
+        Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1978-11-15","revenue":30471420,"runtime":132,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fantasy...beyond
+        your imagination","title":"The Lord of the Rings","video":false,"vote_average":6.5,"vote_count":541}'
+  recorded_at: Sun, 28 Mar 2021 21:31:57 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 28 Mar 2021 16:39:36 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - c33f1ae3ad898e8abd8e3235daac6c22b7770a22
+      X-Memc-Age:
+      - '16350'
+      X-Memc-Expires:
+      - '5250'
+      Etag:
+      - W/"d26b9ef55366c024a2b91656c88406c4"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 eb61efdee152c475afaeb939c428df9e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - HP4eXCMCN_IkQmAFdMkwoDxZR-BY0geuFKkuzTNgONyx7RrAxv6POw==
+      Age:
+      - '17541'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/jOuCWdh0BE6XPu2Vpjl08wDAeFz.jpg","belongs_to_collection":null,"budget":4000000,"genres":[{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"}],"homepage":"","id":123,"imdb_id":"tt0077869","original_language":"en","original_title":"The
+        Lord of the Rings","overview":"The Fellowship of the Ring embark on a journey
+        to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":19.837,"poster_path":"/4O3s0IGZJirPBecqEnP9qsjlTQw.jpg","production_companies":[{"id":286,"logo_path":null,"name":"Fantasy
+        Films","origin_country":""},{"id":4921,"logo_path":null,"name":"Bakshi Productions","origin_country":""},{"id":141322,"logo_path":null,"name":"Saul
+        Zaentz Film Productions","origin_country":""}],"production_countries":[{"iso_3166_1":"ES","name":"Spain"},{"iso_3166_1":"GB","name":"United
+        Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1978-11-15","revenue":30471420,"runtime":132,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fantasy...beyond
+        your imagination","title":"The Lord of the Rings","video":false,"vote_average":6.5,"vote_count":541}'
+  recorded_at: Sun, 28 Mar 2021 21:31:57 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 28 Mar 2021 16:39:36 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - c33f1ae3ad898e8abd8e3235daac6c22b7770a22
+      X-Memc-Age:
+      - '16350'
+      X-Memc-Expires:
+      - '5250'
+      Etag:
+      - W/"d26b9ef55366c024a2b91656c88406c4"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 776776097c9c5473638771d24267cf4f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - eKsC69t46irmzvFogOXxkXoDVz8oG3zhb5E2TrNzM-X5GQ10c7FtWA==
+      Age:
+      - '17541'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/jOuCWdh0BE6XPu2Vpjl08wDAeFz.jpg","belongs_to_collection":null,"budget":4000000,"genres":[{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"}],"homepage":"","id":123,"imdb_id":"tt0077869","original_language":"en","original_title":"The
+        Lord of the Rings","overview":"The Fellowship of the Ring embark on a journey
+        to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":19.837,"poster_path":"/4O3s0IGZJirPBecqEnP9qsjlTQw.jpg","production_companies":[{"id":286,"logo_path":null,"name":"Fantasy
+        Films","origin_country":""},{"id":4921,"logo_path":null,"name":"Bakshi Productions","origin_country":""},{"id":141322,"logo_path":null,"name":"Saul
+        Zaentz Film Productions","origin_country":""}],"production_countries":[{"iso_3166_1":"ES","name":"Spain"},{"iso_3166_1":"GB","name":"United
+        Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1978-11-15","revenue":30471420,"runtime":132,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fantasy...beyond
+        your imagination","title":"The Lord of the Rings","video":false,"vote_average":6.5,"vote_count":541}'
+  recorded_at: Sun, 28 Mar 2021 21:31:57 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/123?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 28 Mar 2021 16:39:36 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - c33f1ae3ad898e8abd8e3235daac6c22b7770a22
+      X-Memc-Age:
+      - '16350'
+      X-Memc-Expires:
+      - '5250'
+      Etag:
+      - W/"d26b9ef55366c024a2b91656c88406c4"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 9ef84cf4cc2ba519912977f9e63d129e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - GgiylRPvNx9IE18nEMZzaQC9ZwsH94BNYoXp3K6TiA1oo17ZzCvV8A==
+      Age:
+      - '17541'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/jOuCWdh0BE6XPu2Vpjl08wDAeFz.jpg","belongs_to_collection":null,"budget":4000000,"genres":[{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"}],"homepage":"","id":123,"imdb_id":"tt0077869","original_language":"en","original_title":"The
+        Lord of the Rings","overview":"The Fellowship of the Ring embark on a journey
+        to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":19.837,"poster_path":"/4O3s0IGZJirPBecqEnP9qsjlTQw.jpg","production_companies":[{"id":286,"logo_path":null,"name":"Fantasy
+        Films","origin_country":""},{"id":4921,"logo_path":null,"name":"Bakshi Productions","origin_country":""},{"id":141322,"logo_path":null,"name":"Saul
+        Zaentz Film Productions","origin_country":""}],"production_countries":[{"iso_3166_1":"ES","name":"Spain"},{"iso_3166_1":"GB","name":"United
+        Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1978-11-15","revenue":30471420,"runtime":132,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fantasy...beyond
+        your imagination","title":"The Lord of the Rings","video":false,"vote_average":6.5,"vote_count":541}'
+  recorded_at: Sun, 28 Mar 2021 21:31:57 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,1035 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=1&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 28 Mar 2021 21:23:10 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=600
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 7d8cace907e6e243637379dedf2cd10d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - YK0P9otuigvBsW4aHteuozra8x5OBew1gxC66-B2gBqpISCuITBySw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/sw7mordbZxgITU877yTpZCud90M.jpg","genre_ids":[18,80],"id":769,"original_language":"en","original_title":"GoodFellas","overview":"The
+        true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is
+        adopted by neighbourhood gangsters at an early age and climbs the ranks of
+        a Mafia family under the guidance of Jimmy Conway.","popularity":29.894,"poster_path":"/6QMSLvU5ziIL2T6VrkaKzN2YkxK.jpg","release_date":"1990-09-12","title":"GoodFellas","video":false,"vote_average":8.4,"vote_count":8724},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":696842,"original_language":"en","original_title":"Scorsese''s
+        Goodfellas","overview":"In this produced by Brett Ratner new retrospective
+        documentary we hear from cast members and additional participants include
+        Harvey Keitel, Leonardo DiCaprio and Terence Winter, creator of Boardwalk
+        Empire and screenwriter of The Wolf of Wall Street. The program gives us thoughts
+        about Scorsese''s approach to the material, casting, characters, and performances,
+        costumes and period details, photography, music, and retrospective thoughts
+        about the film. It is filled with memorable stories and observations from
+        a wide array of commentators.","popularity":1.897,"poster_path":"/eQPjyYlRduhxDP7To0kMfMaOkiU.jpg","release_date":"2015-05-05","title":"Scorsese''s
+        Goodfellas","video":true,"vote_average":8,"vote_count":5}],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:10 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=2&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:11 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 11763acc8ba9ee49f1f166ce39a34730
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 d5385d9a6bccb3289338c8f9df4440ac.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - 9yQJCan8i8oFyHz9Ekl8Wr2RfFt8R1iVK7GEibsQru-lsPBI8l4cmg==
+    body:
+      encoding: UTF-8
+      string: '{"page":2,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:11 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=3&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:11 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 7410167acd1e6161cbf9e1673dcf740f
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 011deabeb2c50745b948f7be2ecfa71b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - hEqLYCIbTvDEp6BmKeVg9U52xDe3fJhZ13-s6_gstMenrCom9y7ZMg==
+    body:
+      encoding: UTF-8
+      string: '{"page":3,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:11 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=4&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:11 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 44fa8e3ded12e918fc832bd234010124
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 9ef84cf4cc2ba519912977f9e63d129e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - XKnJ5k9ws_MGw2PYDBldiRzSRGAJhvIu94GeX6x7F0mfIIZqYbc89A==
+    body:
+      encoding: UTF-8
+      string: '{"page":4,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:11 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=5&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:11 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 5ca0c4756677017bbec16f2b9d4db22f
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 4e9a1d1e23905e72cd7ec46bd845a3a7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - gaNuAORG7PzECTQVYKUtCSc-IFy6jd_gO2DanH9h5nQl3rZ9R5641Q==
+    body:
+      encoding: UTF-8
+      string: '{"page":5,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:11 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=6&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:11 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - e9bfe874560f737dc4af784c28eee22d
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 8be65fc8da062821b9680ac1f2e066fe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - 6mPMXw8LXrG3qYLN-URxGW8c8jBQR3m03vb8xKDKzb604FZoSBDPuw==
+    body:
+      encoding: UTF-8
+      string: '{"page":6,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:11 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=7&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:11 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 84df8aa17f5e4bd7e2d733c746a24f1b
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 0a6c40f72bc055604b9d27a4570daa1b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - gNyO9gyjHbVmdXtnee9Td4PGw2jO7jBRJYebOVrIkrfVB5KnM-5GvQ==
+    body:
+      encoding: UTF-8
+      string: '{"page":7,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:11 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=8&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:11 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - ee1a98abbe09428428340c136d02fb6a
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 24b9ed9aa2f44f71ea012f05fe255326.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - _kEvZPVTv-ecQja6eDdM1IacB3QCMLV9VN1nxngEbCxCw6fLqpQXAQ==
+    body:
+      encoding: UTF-8
+      string: '{"page":8,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:11 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=9&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:12 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 66a99b166198c435de9713c96a1c9b31
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 054e3273b1ea8604004af961945df65e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - yPt6Tqp_6IFdfQIeG1fOxN8SofyAHcJU8GdUZuGOZ8zMzhXqVbfc3g==
+    body:
+      encoding: UTF-8
+      string: '{"page":9,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:12 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=10&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:12 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - a9fd7d385a0a3036b6f2af1076055045
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 8be65fc8da062821b9680ac1f2e066fe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - XGY6yr6j4l_3hNx3ft1UlAQu5nSawxnwKExobHPMyaFT3HJnI-XK0g==
+    body:
+      encoding: UTF-8
+      string: '{"page":10,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:12 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=11&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:12 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 82b90b95b0477a4b12b6d6ea748173ca
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 23c0665e837e408849a5c6eada365d04.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - QQf7inMTIX30U0rB3Rnbiuque8A4yf5r7Hfp4HYx2Zdc1oT_mPkybQ==
+    body:
+      encoding: UTF-8
+      string: '{"page":11,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:12 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=12&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:12 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - ecc0284b2f31f9d340d1a046fc2b1657
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 de07d2c238e1555cdb3d398a5c48fc19.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - gJ0_tbD9jEqJZLZgpcORcL4vvQJzee8UaP9KRkr3oGepEwIKELAZ-Q==
+    body:
+      encoding: UTF-8
+      string: '{"page":12,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:12 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=13&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:12 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - fbb0aee2cbc1c428dc0318f6d26c2495
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 9a6e57455b553fa4fa657bcdde8c1057.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - o6lMogm7UpkVGzSFG5jwI2zJS0PXi8V3KVQPgmQjQE_VxCxq6Tf9zg==
+    body:
+      encoding: UTF-8
+      string: '{"page":13,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:12 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=14&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:12 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 14d78709e9129a738b385ea61e2cd1a4
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 011deabeb2c50745b948f7be2ecfa71b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - pXARpcC55qRoLRYWrdzgT1Mfd9uwVlru8Wz3x_YaIJYtUWzUlS4ckw==
+    body:
+      encoding: UTF-8
+      string: '{"page":14,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:12 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=15&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:12 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 0322f9c135d6c643902eae3f2b8d5d6d
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 8f18576d7056ccf2712062bde60aeafd.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - QbTV0HdjzlHLnXZSOQKJ48-Yj-y-mPbuNhYuVrv2hhmtyoTSbm55eQ==
+    body:
+      encoding: UTF-8
+      string: '{"page":15,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:12 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=16&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:12 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 7044a2a3981c12f2d41296fd3db7b565
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 300fe42bf8129024da7478286a65cf77.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - 2fPP_qw4kjyc7OzVeI5E8MlsuL1dwiuQDXwbZG2ZXqYm3e3liSjx5g==
+    body:
+      encoding: UTF-8
+      string: '{"page":16,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:12 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=17&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:13 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - f7c69df4362dc3e34d80af18100c8ccf
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 4b6fe71895284848be1dfbfa1aef98b6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - Q41-JyWwrlUtKBA6Hzz_eizHGXri-TwPXjvpeV8m8mAJjE3ghL8bwg==
+    body:
+      encoding: UTF-8
+      string: '{"page":17,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:13 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=18&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:13 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 4579046478512f3623dcb4c101a710ce
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 4e9a1d1e23905e72cd7ec46bd845a3a7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - bLsrFmpMSGbGFiIfZTdbz7YcEQg1J-VS4WYg2-zkC6vWzvMqzoOibA==
+    body:
+      encoding: UTF-8
+      string: '{"page":18,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:13 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=19&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:13 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 304847c129d9dafb2baa708ce61fd76a
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 20bc622f1ab2d0cf2a816c8474ae78bf.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - DLJblAmF3SHoiUKJum01WoVElQSCCesjZmiZm8UvFRuFPBAepCz8nw==
+    body:
+      encoding: UTF-8
+      string: '{"page":19,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:13 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=20&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Sun, 28 Mar 2021 21:23:13 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - daf9a86938271ff4795b2cbe8c59a612
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 9a6e57455b553fa4fa657bcdde8c1057.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - jOWsn-6Rf8lEizRHQ6zO0-pyRWk1NiQMB1WvLlMP7XYe0rOCJRgxrg==
+    body:
+      encoding: UTF-8
+      string: '{"page":20,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Sun, 28 Mar 2021 21:23:13 GMT
+recorded_with: VCR 6.0.0

@@ -24,5 +24,4 @@ class MoviesController < ApplicationController
       Movie.create(api_id: params[:id])
     end
   end
-
 end

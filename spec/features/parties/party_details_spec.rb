@@ -62,7 +62,6 @@ RSpec.describe 'As an authenticated user' do
         fill_in :password, with: "4321"
         click_button "Log In"
         visit dashboard_path
-        save_and_open_page
         
         within('.parties') do
           expect(page).to have_content("#{@friend1.email}")
