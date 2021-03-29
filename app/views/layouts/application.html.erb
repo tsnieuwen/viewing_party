@@ -23,8 +23,15 @@
         <a class="nav-link"><%= link_to 'Home', root_path %> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link"><% if current_user && logged_in == true %>
+                                <%= link_to 'Dashboard', dashboard_path %>
+                              </a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link"><%= link_to 'Chat', chat_index_path %></a>
       </li>
+      <% else %>
+      <% end%>
       <li class="nav-item">
         <a class="nav-link"><% if logged_in == true %>
                               <%= link_to 'Log Out', logout_path, method: :delete %>

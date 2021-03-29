@@ -1,17 +1,11 @@
 <h1>Welcome to Viewing Party</h1>
 
-<% if current_user && logged_in == true %>
-  <%= link_to 'Dashboard', dashboard_path %>
-<% else %>
-<% end%>
-
 <section class="description">
   <p>Invite your friends to a viewing party!</p>
 </section>
 
 <section class="user_actions">
-<% if session[:user_id] && current_user %>
-  <%= link_to 'Log Out', logout_path, method: :delete %>
+<% if session[:user_id] && current_user == false%>
 <% else %>
   <%= link_to 'I already have an account', login_path %><br>
   <%= link_to 'Register as a User', new_user_path %>
