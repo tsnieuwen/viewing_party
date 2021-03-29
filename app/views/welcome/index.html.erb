@@ -5,8 +5,7 @@
 </section>
 
 <section class="user_actions">
-<% if session[:user_id] && current_user == false%>
-<% else %>
+<% if logged_in == false %>
   <%= link_to 'I already have an account', login_path %><br>
   <%= link_to 'Register as a User', new_user_path %>
 <% end %>

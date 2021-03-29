@@ -1,5 +1,7 @@
 <h1><%= @movie_info.title %></h1>
 
+<%= image_tag "#{@movie.send_poster_info}" %><br>
+
 <%= button_to "Create Viewing Party for #{@movie_info.title}", new_party_path,
  params:{api_id: "#{@movie_info.api_id}"}, method: :get %><br>
 
