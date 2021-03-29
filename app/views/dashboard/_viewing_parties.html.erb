@@ -1,0 +1,20 @@
+<section class="parties">
+  <h3>Viewing Parties</h3>
+  <% parties.each do |party| %>
+    <%= image_tag "#{party.movie.send_poster_info}" %><br>
+    <%= link_to "#{party.movie.get_details.title}", movie_path(party.movie.api_id) %><br>
+    <%= party.date %><br>
+    <%= party.start_time %><br>
+    <h4>Hosting: <%= party.find_host(party.host_id).email %></h4>
+    <p>Invited: </p>
+      <% if party.invited%>
+          <% party.invited.each do |friend| %>
+            <% if friend.id == current_user.id %>
+              <strong><%= friend.email %></strong>
+            <% else %>
+              <%= friend.email %>
+            <% end%>
+          <% end%>
+      <% end%>
+  <% end %>
+</section>

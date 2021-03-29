@@ -18,9 +18,7 @@ RSpec.describe 'User can log out' do
     expect(current_path).to eq(root_path)
     expect(page).to have_content("Welcome #{user.email}!")
 
-    within(".user_actions") do
-      click_link('Log Out')
-    end
+    click_link('Log Out')
 
     expect(current_path).to eq(root_path)
     expect(page).to have_content("You have been logged out")

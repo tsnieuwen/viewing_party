@@ -15,6 +15,16 @@
  */
 @import "bootstrap";
 
+.my-custom-scrollbar {
+  position: relative;
+  height: 120px;
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -29,4 +39,9 @@ footer {
   display: flex;
   align-self: baseline;
   flex-direction: row;
+}
+
+.navbar-nav>li {
+  padding-left: 30px;
+  padding-right: 30px;
 }

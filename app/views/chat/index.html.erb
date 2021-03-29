@@ -1,0 +1,49 @@
+
+<div class="card grey lighten-3 chat-room">
+  <div class="card-body">
+
+    <!-- Grid row -->
+    <div class="row px-lg-2 px-2">
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-xl-4 px-0">
+
+        <h6 class="font-weight-bold mb-3 text-center text-lg-left">Friends</h6>
+        <div class="white z-depth-1 px-3 pt-3 pb-0">
+          <ul class="list-unstyled friend-list">
+          <% if current_user.friends%>
+            <% current_user.friends.each do |friend| %>
+            <li class="active grey lighten-3 p-2">
+              <a href="#" class="d-flex justify-content-between">
+                <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-3fb7138447319ae92edb05df91e70360-users.png" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1" height="75" width="75">
+                <div class="text-small">
+                  <strong><%= friend.email %></strong>
+                </div>
+                <div class="chat-footer">
+                </div>
+              </a>
+          </ul>
+        </div>
+        <% end %>
+      <% else %>
+      <% end %>
+      </div>
+      <!-- Grid column -->
+
+      <div class="feed" id="message-container">
+        <%= render @messages %>
+      </div>
+            
+          </ul>
+
+<%= render partial: 'messages' %>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+</div>

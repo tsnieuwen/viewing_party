@@ -1,0 +1,7 @@
+<%= form_with model: Message.new, remote: true do |f|%>
+  <%= f.text_field :body, placeholder: "Type your message here" %>
+
+  <%= f.hidden_field :user_id, value: current_user.id %>
+
+  <%= f.submit 'Send' %>
+<% end %>
