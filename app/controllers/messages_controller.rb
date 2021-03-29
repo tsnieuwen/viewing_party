@@ -1,7 +1,10 @@
 class MessagesController < ApplicationController
   def create
-    Message.create(message_params)  
-    redirect_to chat_index_path
+    new_message = Message.new(message_params)  
+    if new_message.save
+      ActionCable.server.broadcast "chatroom_channel",
+                                                      expected: message_render(new_message)
+    end
   end
   
   def destroy
@@ -13,5 +16,9 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:body, :user_id)  
+  end
+
+  def message_render(message)
+    render(partial: 'message', locals: { message: message })
   end
 end

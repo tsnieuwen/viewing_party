@@ -52,7 +52,6 @@ RSpec.describe 'As an authenticated user' do
        fill_in "message[body]", with: "Test message"
        click_button 'Send'
        
-       expect(current_path).to eq(chat_index_path)
        expect(page).to have_content("Test message")
     end
 
@@ -64,7 +63,6 @@ RSpec.describe 'As an authenticated user' do
        fill_in "message[body]", with: "Test message"
        click_button 'Send'
 
-       expect(current_path).to eq(chat_index_path)
        expect(page).to have_content("Test message")
        
        click_button 'Delete Message'

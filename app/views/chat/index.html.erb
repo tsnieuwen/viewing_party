@@ -30,32 +30,11 @@
       </div>
       <!-- Grid column -->
 
-      <!-- Grid column -->
-      <div class="col-md-6 col-xl-8 pl-md-3 px-lg-auto px-0">
-
-        <div class="chat-message">
-          <% if @messages %>
-          <% @messages.each do |message| %>
-          <ul class="list-unstyled chat">
-            <li class="d-flex justify-content-between mb-4">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1">
-              <div class="chat-body white p-3 ml-2 z-depth-1">
-                <div class="header">
-                  <strong class="primary-font"><%= message.user.email %></strong>
-                  <small class="pull-right text-muted"><i class="far fa-clock"></i><%= message.created_at %></small>
-                </div>
-                <hr class="w-100">
-                <p class="mb-0">
-                  <%= message.body %>
-                </p>
-              </div>
-            </li>
-            </li>
-            <%= button_to 'Delete Message', message_path(message.id), method: :delete %>
-            <% end %>
-            <% end %>
+      <div class="feed" id="message-container">
+        <%= render @messages %>
+      </div>
             
-            <%= render partial: 'messages' %>
+        <%= render partial: 'messages' %>
           </ul>
 
         </div>
