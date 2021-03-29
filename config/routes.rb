@@ -36,4 +36,7 @@ Rails.application.routes.draw do
   #user parties
   resources :user_parties, only: [:new, :create]
 
+  #chatroom
+  resources :chat, only: [:index]
+  mount ActionCable.server, at: '/cable'
 end
