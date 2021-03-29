@@ -30,11 +30,8 @@
       <li class="nav-item">
         <a class="nav-link"><%= link_to 'Chat', chat_index_path %></a>
       </li>
-      <% else %>
-      <% end%>
       <li class="nav-item">
-        <a class="nav-link"><% if logged_in == true %>
-                              <%= link_to 'Log Out', logout_path, method: :delete %>
+        <a class="nav-link"><%= link_to 'Log Out', logout_path, method: :delete %>
                             <% else %>
                             <% end%></a>
       </li>
@@ -43,9 +40,11 @@
 </nav>
 </div>
 
+    <div class="container">
     <% flash.each do |name, message| %>
       <%= message %>
     <% end%>
+    </div>
 
     <main>
     <div class="container">
