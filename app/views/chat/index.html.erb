@@ -15,7 +15,7 @@
             <% current_user.friends.each do |friend| %>
             <li class="active grey lighten-3 p-2">
               <a href="#" class="d-flex justify-content-between">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-3fb7138447319ae92edb05df91e70360-users.png" alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1" height="75" width="75">
                 <div class="text-small">
                   <strong><%= friend.email %></strong>
                 </div>
@@ -34,9 +34,9 @@
         <%= render @messages %>
       </div>
             
-        <%= render partial: 'messages' %>
           </ul>
 
+<%= render partial: 'messages' %>
         </div>
 
       </div>
