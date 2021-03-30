@@ -1,0 +1,261 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/100/reviews?api_key=DONT_LOOK&language=en-US&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 19:58:41 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - e8528306e5473cd985bb4ac12e70f32fdcb3d66a
+      X-Memc-Age:
+      - '7514'
+      X-Memc-Expires:
+      - '14086'
+      Etag:
+      - W/"11e92ebf84c36de84896c5a79416721d"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 0c0ece1f43ec7f9ba9292eb4c581296f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - L2M2L7PJG1NaTf41EgPSF7m2gPPfJ92orCjR_MYCw2GqPpoNfDu7NQ==
+      Age:
+      - '7538'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":100,"page":1,"results":[{"author":"BradFlix","author_details":{"name":"","username":"BradFlix","avatar_path":null,"rating":null},"content":"I
+        just plain love this movie!","created_at":"2013-12-01T23:11:51.416Z","id":"529bc23719c2957215011e7b","updated_at":"2013-12-02T07:43:56.302Z","url":"https://www.themoviedb.org/review/529bc23719c2957215011e7b"},{"author":"Andres
+        Gomez","author_details":{"name":"Andres Gomez","username":"tanty","avatar_path":"/https://secure.gravatar.com/avatar/03a53cd53b8254fe582d4fe1acc26c4e.jpg","rating":3.0},"content":"Far
+        from being a good movie, with tons of flaws but already pointing to the pattern
+        of the whole Ritchie''s filmography.","created_at":"2014-04-24T00:11:47.766Z","id":"535856c30e0a26069400064c","updated_at":"2014-04-24T02:37:06.854Z","url":"https://www.themoviedb.org/review/535856c30e0a26069400064c"},{"author":"David
+        Perkins","author_details":{"name":"David Perkins","username":"Prkns","avatar_path":"/https://secure.gravatar.com/avatar/a37c204421ae6672ffec79b616e6f1c0.jpg","rating":9.0},"content":"Genuinely
+        one of my favorite movies of all time. Watched again recently and realised
+        how well written, brilliantly shot, beautifully cast and cleverly produced
+        this movie actually is!","created_at":"2017-01-09T12:24:47.234Z","id":"5873810f9251410e71009a68","updated_at":"2017-01-09T14:11:51.288Z","url":"https://www.themoviedb.org/review/5873810f9251410e71009a68"}],"total_pages":1,"total_results":3}'
+  recorded_at: Tue, 30 Mar 2021 22:04:19 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/100/reviews?api_key=DONT_LOOK&language=en-US&page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 19:58:41 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 38efdd0f7c1954ccffd73e32625a5a35b62e7b7d
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-03-10 03:25:12 +0000'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 300fe42bf8129024da7478286a65cf77.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - rrw2Zr2M2lhyllwgf1yiqD3HwuW9vK33zxAAijMJCN3iDmP4JprX3A==
+      Age:
+      - '7539'
+    body:
+      encoding: UTF-8
+      string: '{"id":100,"page":2,"results":[],"total_pages":1,"total_results":3}'
+  recorded_at: Tue, 30 Mar 2021 22:04:20 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/100/credits?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 19:59:23 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - c41ce48095c7537b31baa5d45023f7d60a0f8887
+      X-Memc-Age:
+      - '14639'
+      X-Memc-Expires:
+      - '6961'
+      Etag:
+      - W/"a2b2157c49d2f2b1afb2f959ae98abb4"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 300fe42bf8129024da7478286a65cf77.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - XkvV2kwoCGPtDltF0-X7MWYUu56Y6bwjqqD8Ii78eFKo_6qpaazuoQ==
+      Age:
+      - '7497'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":100,"cast":[{"adult":false,"gender":2,"id":973,"known_for_department":"Acting","name":"Jason
+        Flemyng","original_name":"Jason Flemyng","popularity":12.437,"profile_path":"/6E5KfjDwm00jIfN3LNLL9jZAvx3.jpg","cast_id":12,"character":"Tom","credit_id":"52fe4217c3a36847f80035fb","order":0},{"adult":false,"gender":2,"id":974,"known_for_department":"Acting","name":"Dexter
+        Fletcher","original_name":"Dexter Fletcher","popularity":2.051,"profile_path":"/yRI8MDB5sg8b8EZkzFz5cCBrnKL.jpg","cast_id":13,"character":"Soap","credit_id":"52fe4217c3a36847f80035ff","order":1},{"adult":false,"gender":2,"id":975,"known_for_department":"Acting","name":"Nick
+        Moran","original_name":"Nick Moran","popularity":3.726,"profile_path":"/cwqrMbCE9ABFK8NhnK2DypEozr1.jpg","cast_id":14,"character":"Eddie","credit_id":"52fe4217c3a36847f8003603","order":2},{"adult":false,"gender":2,"id":976,"known_for_department":"Acting","name":"Jason
+        Statham","original_name":"Jason Statham","popularity":31.795,"profile_path":"/lldeQ91GwIVff43JBrpdbAAeYWj.jpg","cast_id":15,"character":"Bacon","credit_id":"52fe4217c3a36847f8003607","order":3},{"adult":false,"gender":2,"id":980,"known_for_department":"Acting","name":"Vinnie
+        Jones","original_name":"Vinnie Jones","popularity":3.395,"profile_path":"/tkYWG9gY2QpoBfOh4OWNz8yQfsw.jpg","cast_id":17,"character":"Big
+        Chris","credit_id":"52fe4217c3a36847f800360f","order":4},{"adult":false,"gender":2,"id":982,"known_for_department":"Acting","name":"Sting","original_name":"Sting","popularity":3.668,"profile_path":"/y6gpCAf6LTHcqFXEZ2udXJkucAm.jpg","cast_id":18,"character":"JD","credit_id":"52fe4217c3a36847f8003613","order":5},{"adult":false,"gender":2,"id":978,"known_for_department":"Acting","name":"Steven
+        Mackintosh","original_name":"Steven Mackintosh","popularity":2.013,"profile_path":"/vDA4mmVe0XMnqd6qMyGWI8bUEeC.jpg","cast_id":16,"character":"Winston","credit_id":"52fe4217c3a36847f800360b","order":6},{"adult":false,"gender":2,"id":984,"known_for_department":"Acting","name":"Nicholas
+        Rowe","original_name":"Nicholas Rowe","popularity":3.0,"profile_path":"/mAR7cSZO9V9v0fFlDxiKDfvHlkQ.jpg","cast_id":19,"character":"J","credit_id":"52fe4217c3a36847f8003617","order":7},{"adult":false,"gender":2,"id":987,"known_for_department":"Acting","name":"Lenny
+        McLean","original_name":"Lenny McLean","popularity":0.6,"profile_path":null,"cast_id":22,"character":"Barry
+        the Baptist","credit_id":"52fe4217c3a36847f8003623","order":8},{"adult":false,"gender":2,"id":989,"known_for_department":"Acting","name":"P.H.
+        Moriarty","original_name":"P.H. Moriarty","popularity":1.007,"profile_path":"/k0geInO1w0hWGqN5A2fx0l6K8NM.jpg","cast_id":24,"character":"''Hatchet''
+        Harry Lonsdale","credit_id":"52fe4217c3a36847f800362b","order":9},{"adult":false,"gender":2,"id":990,"known_for_department":"Acting","name":"Frank
+        Harper","original_name":"Frank Harper","popularity":1.052,"profile_path":null,"cast_id":25,"character":"Dog","credit_id":"52fe4217c3a36847f800362f","order":10},{"adult":false,"gender":2,"id":992,"known_for_department":"Acting","name":"Huggy
+        Leaver","original_name":"Huggy Leaver","popularity":1.4,"profile_path":null,"cast_id":27,"character":"Paul","credit_id":"52fe4217c3a36847f8003637","order":11},{"adult":false,"gender":2,"id":994,"known_for_department":"Acting","name":"Stephen
+        Marcus","original_name":"Stephen Marcus","popularity":1.66,"profile_path":"/oQ6iNYr3KjiHWZYACtX7dao0C37.jpg","cast_id":29,"character":"Nick
+        the Greek","credit_id":"52fe4217c3a36847f800363f","order":12},{"adult":false,"gender":2,"id":988,"known_for_department":"Acting","name":"Peter
+        McNicholl","original_name":"Peter McNicholl","popularity":0.62,"profile_path":null,"cast_id":23,"character":"Little
+        Chris","credit_id":"52fe4217c3a36847f8003627","order":13},{"adult":false,"gender":0,"id":985,"known_for_department":"Acting","name":"Nick
+        Marcq","original_name":"Nick Marcq","popularity":0.6,"profile_path":"/c38EBmS4VL902Uci9KcBQCDWTnH.jpg","cast_id":20,"character":"Charles","credit_id":"52fe4217c3a36847f800361b","order":14},{"adult":false,"gender":2,"id":993,"known_for_department":"Acting","name":"Tony
+        McMahon","original_name":"Tony McMahon","popularity":0.6,"profile_path":"/uMjxDXO3w6CmrfOI8f4DOvyWXmZ.jpg","cast_id":28,"character":"John","credit_id":"52fe4217c3a36847f800363b","order":15},{"adult":false,"gender":0,"id":2638789,"known_for_department":"Acting","name":"Steve
+        Sweeney","original_name":"Steve Sweeney","popularity":0.6,"profile_path":null,"cast_id":47,"character":"Plank","credit_id":"5fa2cc8c5a5ed000384fa653","order":16},{"adult":false,"gender":2,"id":986,"known_for_department":"Acting","name":"Charles
+        Forbes","original_name":"Charles Forbes","popularity":0.6,"profile_path":"/qgzmMOhELprvMvzSHEyKiF0Ucm8.jpg","cast_id":21,"character":"Willie","credit_id":"52fe4217c3a36847f800361f","order":17},{"adult":false,"gender":2,"id":995,"known_for_department":"Acting","name":"Vas
+        Blackwood","original_name":"Vas Blackwood","popularity":1.111,"profile_path":"/ftmxxqzZ1aaJVS8aT6TdLD4qHkI.jpg","cast_id":30,"character":"Rory
+        Breaker","credit_id":"52fe4217c3a36847f8003643","order":18},{"adult":false,"gender":2,"id":4317,"known_for_department":"Acting","name":"Jake
+        Abraham","original_name":"Jake Abraham","popularity":1.4,"profile_path":null,"cast_id":31,"character":"Dean","credit_id":"52fe4217c3a36847f8003647","order":19},{"adult":false,"gender":2,"id":4318,"known_for_department":"Acting","name":"Victor
+        McGuire","original_name":"Victor McGuire","popularity":2.112,"profile_path":"/sEeNcdlr8UwqZFwTSmVru9TeVS1.jpg","cast_id":32,"character":"Gary","credit_id":"52fe4217c3a36847f800364b","order":20},{"adult":false,"gender":2,"id":115787,"known_for_department":"Acting","name":"Danny
+        John-Jules","original_name":"Danny John-Jules","popularity":1.166,"profile_path":"/7528spgohTTHUBVSLZDPWzmlsIi.jpg","cast_id":35,"character":"Barfly
+        Jack","credit_id":"550c8bc89251413443001cbb","order":21},{"adult":false,"gender":2,"id":1473866,"known_for_department":"Acting","name":"Elwin
+        ''Chopper'' David","original_name":"Elwin ''Chopper'' David","popularity":1.146,"profile_path":"/osG8WiN92HUceFxk1Rk9sAt0Ryl.jpg","cast_id":36,"character":"Nathan","credit_id":"56d9cf72c3a36870ac0109c2","order":22},{"adult":false,"gender":1,"id":236388,"known_for_department":"Acting","name":"Vera
+        Day","original_name":"Vera Day","popularity":0.98,"profile_path":"/748jk8tZ8SGN4u2H2PgRvnko8Uf.jpg","cast_id":37,"character":"Tanya","credit_id":"57676387c3a36840b4000d4a","order":23},{"adult":false,"gender":2,"id":47632,"known_for_department":"Acting","name":"Rob
+        Brydon","original_name":"Rob Brydon","popularity":1.62,"profile_path":"/xoKLZVwzaUgTUEvPX4vymXpC1fU.jpg","cast_id":38,"character":"Traffic
+        Warden","credit_id":"588289d5925141303e01291d","order":24},{"adult":false,"gender":2,"id":1116,"known_for_department":"Acting","name":"Alan
+        Ford","original_name":"Alan Ford","popularity":1.443,"profile_path":"/nSlngfcFsCPENxiqCwZnB1twKuC.jpg","cast_id":39,"character":"Alan
+        / Narrator","credit_id":"588289e9c3a368146701265e","order":25},{"adult":false,"gender":2,"id":17290,"known_for_department":"Acting","name":"Andrew
+        Tiernan","original_name":"Andrew Tiernan","popularity":1.565,"profile_path":"/co8FxSWaRuYW3bhsJBTXO3GNkdg.jpg","cast_id":40,"character":"Man
+        in Pub","credit_id":"588289fd925141303a012ecb","order":26},{"adult":false,"gender":2,"id":957,"known_for_department":"Production","name":"Matthew
+        Vaughn","original_name":"Matthew Vaughn","popularity":1.511,"profile_path":"/Dnbz3B7yy4u0abixuD5LakZgsy.jpg","cast_id":41,"character":"Yuppy
+        In Car","credit_id":"5b85eb509251414a06002965","order":27},{"adult":false,"gender":2,"id":192943,"known_for_department":"Acting","name":"Richard
+        Vanstone","original_name":"Richard Vanstone","popularity":0.824,"profile_path":"/yklWV3XlWKwcHeqSFWkUHNmFAUI.jpg","cast_id":42,"character":"Frazer","credit_id":"5c36cc030e0a2631c654375d","order":28},{"adult":false,"gender":0,"id":67214,"known_for_department":"Acting","name":"Jimmy
+        Flint","original_name":"Jimmy Flint","popularity":0.6,"profile_path":"/qmk1dXmA1ELOMnxwmOvhjaPCjy9.jpg","cast_id":43,"character":"Don","credit_id":"5c36ccee925141531c24bbf9","order":29}],"crew":[{"adult":false,"gender":2,"id":960,"known_for_department":"Sound","name":"John
+        Murphy","original_name":"John Murphy","popularity":0.6,"profile_path":null,"credit_id":"52fe4217c3a36847f80035d3","department":"Sound","job":"Original
+        Music Composer"},{"adult":false,"gender":2,"id":956,"known_for_department":"Directing","name":"Guy
+        Ritchie","original_name":"Guy Ritchie","popularity":6.925,"profile_path":"/9pLUnjMgIEWXi0mlHYzie9cKUTD.jpg","credit_id":"52fe4217c3a36847f8003651","department":"Writing","job":"Screenplay"},{"adult":false,"gender":2,"id":956,"known_for_department":"Directing","name":"Guy
+        Ritchie","original_name":"Guy Ritchie","popularity":6.925,"profile_path":"/9pLUnjMgIEWXi0mlHYzie9cKUTD.jpg","credit_id":"52fe4217c3a36847f80035c1","department":"Directing","job":"Director"},{"adult":false,"gender":2,"id":956,"known_for_department":"Directing","name":"Guy
+        Ritchie","original_name":"Guy Ritchie","popularity":6.925,"profile_path":"/9pLUnjMgIEWXi0mlHYzie9cKUTD.jpg","credit_id":"52fe4217c3a36847f80035f1","department":"Production","job":"Casting"},{"adult":false,"gender":2,"id":957,"known_for_department":"Production","name":"Matthew
+        Vaughn","original_name":"Matthew Vaughn","popularity":1.511,"profile_path":"/Dnbz3B7yy4u0abixuD5LakZgsy.jpg","credit_id":"52fe4217c3a36847f80035c7","department":"Production","job":"Producer"},{"adult":false,"gender":2,"id":959,"known_for_department":"Sound","name":"David
+        A. Hughes","original_name":"David A. Hughes","popularity":0.6,"profile_path":null,"credit_id":"52fe4217c3a36847f80035cd","department":"Sound","job":"Original
+        Music Composer"},{"adult":false,"gender":2,"id":966,"known_for_department":"Camera","name":"Tim
+        Maurice-Jones","original_name":"Tim Maurice-Jones","popularity":0.828,"profile_path":null,"credit_id":"52fe4217c3a36847f80035d9","department":"Camera","job":"Director
+        of Photography"},{"adult":false,"gender":0,"id":967,"known_for_department":"Art","name":"Iain
+        Andrews","original_name":"Iain Andrews","popularity":0.6,"profile_path":null,"credit_id":"52fe4217c3a36847f80035df","department":"Art","job":"Production
+        Design"},{"adult":false,"gender":0,"id":968,"known_for_department":"Art","name":"Eve
+        Mavrakis","original_name":"Eve Mavrakis","popularity":0.98,"profile_path":null,"credit_id":"52fe4217c3a36847f80035e5","department":"Art","job":"Production
+        Design"},{"adult":false,"gender":1,"id":970,"known_for_department":"Production","name":"Celestia
+        Fox","original_name":"Celestia Fox","popularity":0.6,"profile_path":null,"credit_id":"52fe4217c3a36847f80035eb","department":"Production","job":"Casting"},{"adult":false,"gender":0,"id":971,"known_for_department":"Editing","name":"Niven
+        Howie","original_name":"Niven Howie","popularity":1.395,"profile_path":null,"credit_id":"52fe4217c3a36847f80035f7","department":"Editing","job":"Editor"},{"adult":false,"gender":0,"id":39670,"known_for_department":"Costume
+        \u0026 Make-Up","name":"Stephanie Collie","original_name":"Stephanie Collie","popularity":1.4,"profile_path":null,"credit_id":"534feadf0e0a267eab000f7c","department":"Costume
+        \u0026 Make-Up","job":"Costume Design"},{"adult":false,"gender":0,"id":1340728,"known_for_department":"Crew","name":"Glenn
+        Marks","original_name":"Glenn Marks","popularity":1.4,"profile_path":null,"credit_id":"5c36d4c70e0a2631bc543df9","department":"Crew","job":"Stunt
+        Coordinator"},{"adult":false,"gender":0,"id":1417831,"known_for_department":"Crew","name":"Sy
+        Hollands","original_name":"Sy Hollands","popularity":0.98,"profile_path":null,"credit_id":"5c36d5e4c3a3685eef27933c","department":"Crew","job":"Stunt
+        Driver"},{"adult":false,"gender":2,"id":1616303,"known_for_department":"Acting","name":"Richard
+        Graydon","original_name":"Richard Graydon","popularity":1.4,"profile_path":"/8T9i8DUKbk8pco4UG5KjzKWLnZX.jpg","credit_id":"5c36d4e2c3a3685ee9279074","department":"Crew","job":"Stunts"}]}'
+  recorded_at: Tue, 30 Mar 2021 22:04:20 GMT
+recorded_with: VCR 6.0.0

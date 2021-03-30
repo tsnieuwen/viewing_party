@@ -1,6 +1,5 @@
 class DiscoverController < ApplicationController
-before_action :authorized, only: [:index]
+  before_action :authorized, only: [:index]
 
-  def index
-  end
+  def index; end
 end

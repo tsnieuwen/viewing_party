@@ -15,10 +15,10 @@ RSpec.describe Movie, type: :model do
         movie = Movie.create(
           api_id: Figaro.env.movie_details
         )
-        expect(movie.get_details.title).to eq("The Lord of the Rings")
-        expect(movie.get_details.hours).to eq(2)
-        expect(movie.get_details.minutes).to eq(12)
-        expect(movie.get_details.runtime).to eq(132)
+        expect(movie.details.title).to eq("The Lord of the Rings")
+        expect(movie.details.hours).to eq(2)
+        expect(movie.details.minutes).to eq(12)
+        expect(movie.details.runtime).to eq(132)
       end
     end
     it "#send_poster_info" do

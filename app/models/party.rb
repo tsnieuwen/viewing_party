@@ -3,7 +3,7 @@ class Party < ApplicationRecord
   validates :duration, presence: true
   belongs_to :movie
 
-  has_many :user_parties
+  has_many :user_parties, dependent: :destroy
   has_many :users, through: :user_parties
 
   def find_host(host_id)
@@ -11,6 +11,6 @@ class Party < ApplicationRecord
   end
 
   def invited
-    users.where("users.id != ?", self.host_id)
+    users.where('users.id != ?', host_id)
   end
 end

@@ -11,7 +11,7 @@ class MovieFacade
     MovieService.show_movie(api_id)
   end
 
-  def self.get_details(api_id)
+  def self.movie_details(api_id)
     MovieService.reviews(api_id)
   end
 end

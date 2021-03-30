@@ -3,7 +3,7 @@ module Connect
     Faraday.new(
       url: 'https://api.themoviedb.org',
       params: {
-        'language': "en-US",
+        'language': 'en-US',
         'api_key': Figaro.env.api_key
       }
     )

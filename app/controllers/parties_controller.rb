@@ -1,6 +1,6 @@
 class PartiesController < ApplicationController
-before_action :authorized, only: [:new]
-before_action :find_movie, only: [:create]
+  before_action :authorized, only: [:new]
+  before_action :find_movie, only: [:create]
 
   def new
     @movie = MovieService.show_movie(params[:api_id])
@@ -8,18 +8,17 @@ before_action :find_movie, only: [:create]
 
   def create
     party = current_user.parties.create!(
-      date: date_params(params["day(1i)"], params["day(2i)"],
-      params["day(3i)"]),
+      date: date_params(params['day(1i)'], params['day(2i)'],
+                        params['day(3i)']),
       movie_id: @movie.id,
       duration: params[:duration],
       host_id: current_user.id,
       start_time: start_params(params[:hour], params[:minute],
-        params[:am_pm])
-      )
+                               params[:am_pm])
+    )
     PartyFacade.make_parties(params[:invited], party.id)
     redirect_to dashboard_path
   end
-
 
   private
 
