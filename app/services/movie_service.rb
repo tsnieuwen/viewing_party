@@ -45,16 +45,6 @@ class MovieService
     cast = cast(api_id)
 		{"all_reviews": reviews, "all_cast": cast}
 	end
-	# def self.reviews(api_id)
-	# 	reviews = []
-	# 	for page_num in (1..10) do
-  #     parsed = conn2("movie/#{api_id}/reviews", "page", "#{page_num}")
-	# 		reviews += parsed[:results]
-	# 	end
-  #   cast = cast(api_id)
-	# 	{"all_reviews": reviews, "all_cast": cast}
-  #   require 'pry'; binding.pry
-	# end
 
   def self.cast(api_id)
     response = conn.get("3/movie/#{api_id}/credits")
