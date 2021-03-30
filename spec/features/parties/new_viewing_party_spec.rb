@@ -77,7 +77,7 @@ RSpec.describe 'As an authenticated user' do
     end
 
     it 'Displays invited for friends that are invited' do
-      VCR.use_cassette('single_movie_details5') do
+      VCR.use_cassette('single_movie_details6') do
         visit root_path
         click_link "I already have an account"
         fill_in :email, with: @user.email
@@ -93,8 +93,8 @@ RSpec.describe 'As an authenticated user' do
         fill_in :hour, with: "4"
         fill_in :minute, with: "30"
         select('PM', from: 'am_pm')
-        find(:xpath, "//input[@name=#{@friend1.id}]").set(true)
-        find(:xpath, "//input[@name=#{@friend2.id}]").set(true)
+        find(:xpath, "//input[@value=#{@friend1.id}]").set(true)
+        find(:xpath, "//input[@value=#{@friend2.id}]").set(true)
         click_button('Create Party')
 
         expect(current_path).to eq(dashboard_path)

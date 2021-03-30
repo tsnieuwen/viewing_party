@@ -16,6 +16,9 @@ before_action :authorized, only: [:new]
       start_time: start_params(params[:hour], params[:minute],
         params[:am_pm])
       )
+    require 'pry'; binding.pry
+    PartyFacade.make_parties(params[:invited])
+    
     invited = params.to_enum.to_h.find_all do |key, value|
        key if value == "invited"
     end
