@@ -26,6 +26,8 @@
 
 <h2>Reviews</h2>
 Total Reviews: <%= @reviews.count %>
+<blockquote>
 <% @reviews.each do |review| %>
-<li><%= review[:author] %>: <%= review[:content] %></li><br>
+<p><%= review[:content] %> <footer> - <%= review[:author] %></footer></p><br>
 <% end %>
+</blockquote>
