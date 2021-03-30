@@ -3,7 +3,7 @@ class MovieService
 	def self.top_rated_movies
 		data = []
 		for page_num in (1..2) do
-			response = conn.get("movie/top_rated") do |req|
+			response = conn.get("3/movie/top_rated") do |req|
         req.params['page'] = "#{page_num}"
       end
       attributes = JSON.parse(response.body, symbolize_names: true)
@@ -15,7 +15,7 @@ class MovieService
 	def self.matched_movies(text)
 		data = []
 		for page_num in (1..2) do
-      response = conn.get("search/movie",
+      response = conn.get("3/search/movie",
         {
           'query': "#{text}",
           'page': "#{page_num}",
@@ -28,7 +28,7 @@ class MovieService
 	end
 
 	def self.show_movie(api_id)
-		response = conn.get("movie/#{api_id}")
+		response = conn.get("3/movie/#{api_id}")
     attributes = JSON.parse(response.body, symbolize_names: true)
     ShowMovie.new(attributes)
 	end
@@ -36,7 +36,7 @@ class MovieService
 	def self.reviews(api_id)
 		reviews = []
 		for page_num in (1..2) do
-      response = conn.get("movie/#{api_id}/reviews") do |req|
+      response = conn.get("3/movie/#{api_id}/reviews") do |req|
         req.params['page'] = "#{page_num}"
       end
       attributes = JSON.parse(response.body, symbolize_names: true)
@@ -57,8 +57,9 @@ class MovieService
 	# end
 
   def self.cast(api_id)
-    response = conn.get("movie/#{api_id}/credits")
+    response = conn.get("3/movie/#{api_id}/credits")
     attributes = JSON.parse(response.body, symbolize_names: true)
-		attributes[:cast][0..9]
+    full_cast = attributes[:cast].length
+		attributes[:cast][0..full_cast]
   end
 end

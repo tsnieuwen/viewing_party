@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 30 Mar 2021 20:03:43 GMT
+      - Tue, 30 Mar 2021 20:14:18 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,13 +42,13 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 293f01eb5e44c6051948fdc2f3e7eb07.cloudfront.net (CloudFront)
+      - 1.1 054e3273b1ea8604004af961945df65e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - MIA3-C5
       X-Amz-Cf-Id:
-      - TYTl6sjdx5vdpIY2HEQ0cEJufHsh1l_vMZerdqwBj4GCBvpLFozwEA==
+      - YRnzHhCWb_neC9HxWv3hUSTfCo1xw-Y6izLFtcgH7DowpfiKywzrKA==
       Age:
-      - '347'
+      - '58'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/sw7mordbZxgITU877yTpZCud90M.jpg","genre_ids":[18,80],"id":769,"original_language":"en","original_title":"GoodFellas","overview":"The
@@ -64,7 +64,7 @@ http_interactions:
         about the film. It is filled with memorable stories and observations from
         a wide array of commentators.","popularity":1.698,"poster_path":"/eQPjyYlRduhxDP7To0kMfMaOkiU.jpg","release_date":"2015-05-05","title":"Scorsese''s
         Goodfellas","video":true,"vote_average":8,"vote_count":5}],"total_pages":1,"total_results":2}'
-  recorded_at: Tue, 30 Mar 2021 20:09:30 GMT
+  recorded_at: Tue, 30 Mar 2021 20:15:16 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=2&query=GoodFellas
@@ -89,8 +89,6 @@ http_interactions:
       - '57'
       Connection:
       - keep-alive
-      Date:
-      - Tue, 30 Mar 2021 20:03:43 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -100,22 +98,22 @@ http_interactions:
       Access-Control-Expose-Headers:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
-      Etag:
-      - 11763acc8ba9ee49f1f166ce39a34730
+      Date:
+      - Tue, 30 Mar 2021 20:15:16 GMT
       Cache-Control:
       - public, max-age=600
+      Etag:
+      - 11763acc8ba9ee49f1f166ce39a34730
       X-Cache:
-      - Hit from cloudfront
+      - RefreshHit from cloudfront
       Via:
-      - 1.1 293f01eb5e44c6051948fdc2f3e7eb07.cloudfront.net (CloudFront)
+      - 1.1 1d97f4305a36b62cd5f4e0d6a1704922.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - MIA3-C5
       X-Amz-Cf-Id:
-      - jcJatPM0ZNjrxBt1Zt9nFO0-scpFbXnkkgYlb3DlwN77K7NYFA3HZQ==
-      Age:
-      - '347'
+      - iP6XlqWuRh2kF2F756nzpKAwNuPhPhjN_WfFx9UqxGqX41wHktfQuw==
     body:
       encoding: UTF-8
       string: '{"page":2,"results":[],"total_pages":1,"total_results":2}'
-  recorded_at: Tue, 30 Mar 2021 20:09:30 GMT
+  recorded_at: Tue, 30 Mar 2021 20:15:16 GMT
 recorded_with: VCR 6.0.0

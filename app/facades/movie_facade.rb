@@ -5,7 +5,6 @@ class MovieFacade
 
   def self.search(term)
     MovieService.matched_movies(term)
-    # movies[0..39]
   end
 
   def self.show_movie(api_id)
