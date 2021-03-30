@@ -1,0 +1,1048 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=1&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:40:47 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=600
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 eeadef659c82cd26db15c4babc8854ec.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - kxajlhjnhvRWKAFXxrBaQ1yQ0lnJO80bjdWL5sit5ue7gm_xGLMHyg==
+      Age:
+      - '96'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwYWdlIjoxLCJyZXN1bHRzIjpbeyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvN3ROVFBaTWIxM1cwQWhrY3VvTDZteVJyTlJyLmpwZyIsImdlbnJlX2lkcyI6WzEyLDE0LDI4XSwiaWQiOjEyMSwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIExvcmQgb2YgdGhlIFJpbmdzOiBUaGUgVHdvIFRvd2VycyIsIm92ZXJ2aWV3IjoiRnJvZG8gYW5kIFNhbSBhcmUgdHJla2tpbmcgdG8gTW9yZG9yIHRvIGRlc3Ryb3kgdGhlIE9uZSBSaW5nIG9mIFBvd2VyIHdoaWxlIEdpbWxpLCBMZWdvbGFzIGFuZCBBcmFnb3JuIHNlYXJjaCBmb3IgdGhlIG9yYy1jYXB0dXJlZCBNZXJyeSBhbmQgUGlwcGluLiBBbGwgYWxvbmcsIG5lZmFyaW91cyB3aXphcmQgU2FydW1hbiBhd2FpdHMgdGhlIEZlbGxvd3NoaXAgbWVtYmVycyBhdCB0aGUgT3J0aGFuYyBUb3dlciBpbiBJc2VuZ2FyZC4iLCJwb3B1bGFyaXR5Ijo2NC45MjQsInBvc3Rlcl9wYXRoIjoiLzVWVE4wcFI4Z2NxVjNFUFVISGZNR25KWU45TC5qcGciLCJyZWxlYXNlX2RhdGUiOiIyMDAyLTEyLTE4IiwidGl0bGUiOiJUaGUgTG9yZCBvZiB0aGUgUmluZ3M6IFRoZSBUd28gVG93ZXJzIiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjguMywidm90ZV9jb3VudCI6MTYyNjR9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiL2pPdUNXZGgwQkU2WFB1MlZwamwwOHdEQWVGei5qcGciLCJnZW5yZV9pZHMiOlsxMiwxNiwxNF0sImlkIjoxMjMsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IlRoZSBMb3JkIG9mIHRoZSBSaW5ncyIsIm92ZXJ2aWV3IjoiVGhlIEZlbGxvd3NoaXAgb2YgdGhlIFJpbmcgZW1iYXJrIG9uIGEgam91cm5leSB0byBkZXN0cm95IHRoZSBPbmUgUmluZyBhbmQgZW5kIFNhdXJvbidzIHJlaWduIG92ZXIgTWlkZGxlLWVhcnRoLiIsInBvcHVsYXJpdHkiOjIwLjY1OSwicG9zdGVyX3BhdGgiOiIvNE8zczBJR1pKaXJQQmVjcUVuUDlxc2psVFF3LmpwZyIsInJlbGVhc2VfZGF0ZSI6IjE5NzgtMTEtMTUiLCJ0aXRsZSI6IlRoZSBMb3JkIG9mIHRoZSBSaW5ncyIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo2LjUsInZvdGVfY291bnQiOjU0MX0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvdlJRbnpPbjRIaklNWDRMQnE5bkhoRlhic1N1LmpwZyIsImdlbnJlX2lkcyI6WzEyLDE0LDI4XSwiaWQiOjEyMCwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIExvcmQgb2YgdGhlIFJpbmdzOiBUaGUgRmVsbG93c2hpcCBvZiB0aGUgUmluZyIsIm92ZXJ2aWV3IjoiWW91bmcgaG9iYml0IEZyb2RvIEJhZ2dpbnMsIGFmdGVyIGluaGVyaXRpbmcgYSBteXN0ZXJpb3VzIHJpbmcgZnJvbSBoaXMgdW5jbGUgQmlsYm8sIG11c3QgbGVhdmUgaGlzIGhvbWUgaW4gb3JkZXIgdG8ga2VlcCBpdCBmcm9tIGZhbGxpbmcgaW50byB0aGUgaGFuZHMgb2YgaXRzIGV2aWwgY3JlYXRvci4gQWxvbmcgdGhlIHdheSwgYSBmZWxsb3dzaGlwIGlzIGZvcm1lZCB0byBwcm90ZWN0IHRoZSByaW5nYmVhcmVyIGFuZCBtYWtlIHN1cmUgdGhhdCB0aGUgcmluZyBhcnJpdmVzIGF0IGl0cyBmaW5hbCBkZXN0aW5hdGlvbjogTXQuIERvb20sIHRoZSBvbmx5IHBsYWNlIHdoZXJlIGl0IGNhbiBiZSBkZXN0cm95ZWQuIiwicG9wdWxhcml0eSI6NzIuOTMzLCJwb3N0ZXJfcGF0aCI6Ii82b29tNVFZUTJ5UVRNSklibnZia0JMOWNIbzYuanBnIiwicmVsZWFzZV9kYXRlIjoiMjAwMS0xMi0xOCIsInRpdGxlIjoiVGhlIExvcmQgb2YgdGhlIFJpbmdzOiBUaGUgRmVsbG93c2hpcCBvZiB0aGUgUmluZyIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo4LjMsInZvdGVfY291bnQiOjE4ODQ0fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii9wbTBSaXdOcFNqYThnUjBCVFdweG81YTlCYmwuanBnIiwiZ2VucmVfaWRzIjpbMTIsMTQsMjhdLCJpZCI6MTIyLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJUaGUgTG9yZCBvZiB0aGUgUmluZ3M6IFRoZSBSZXR1cm4gb2YgdGhlIEtpbmciLCJvdmVydmlldyI6IkFyYWdvcm4gaXMgcmV2ZWFsZWQgYXMgdGhlIGhlaXIgdG8gdGhlIGFuY2llbnQga2luZ3MgYXMgaGUsIEdhbmRhbGYgYW5kIHRoZSBvdGhlciBtZW1iZXJzIG9mIHRoZSBicm9rZW4gZmVsbG93c2hpcCBzdHJ1Z2dsZSB0byBzYXZlIEdvbmRvciBmcm9tIFNhdXJvbidzIGZvcmNlcy4gTWVhbndoaWxlLCBGcm9kbyBhbmQgU2FtIHRha2UgdGhlIHJpbmcgY2xvc2VyIHRvIHRoZSBoZWFydCBvZiBNb3Jkb3IsIHRoZSBkYXJrIGxvcmQncyByZWFsbS4iLCJwb3B1bGFyaXR5Ijo2NC4zNDgsInBvc3Rlcl9wYXRoIjoiL3JDenBER0xiT29Qd0xqeTNPQW01TlVQT1RyQy5qcGciLCJyZWxlYXNlX2RhdGUiOiIyMDAzLTEyLTAxIiwidGl0bGUiOiJUaGUgTG9yZCBvZiB0aGUgUmluZ3M6IFRoZSBSZXR1cm4gb2YgdGhlIEtpbmciLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC41LCJ2b3RlX2NvdW50IjoxNzM3N30seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOm51bGwsImdlbnJlX2lkcyI6Wzk5XSwiaWQiOjU3MzA4OSwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIExvcmQgb2YgdGhlIFJpbmdzOiBUaGUgUXVlc3QgRnVsZmlsbGVkIiwib3ZlcnZpZXciOiIiLCJwb3B1bGFyaXR5Ijo4LjkzOSwicG9zdGVyX3BhdGgiOm51bGwsInJlbGVhc2VfZGF0ZSI6IjIwMDMtMTItMjYiLCJ0aXRsZSI6IlRoZSBMb3JkIG9mIHRoZSBSaW5nczogVGhlIFF1ZXN0IEZ1bGZpbGxlZCIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo2LjgsInZvdGVfY291bnQiOjJ9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjpudWxsLCJnZW5yZV9pZHMiOls5OV0sImlkIjozMzU2MTIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IlRoZSBNYWtpbmcgb2YgJ1RoZSBMb3JkIG9mIHRoZSBSaW5ncyciLCJvdmVydmlldyI6IkEgY29sbGVjdGlvbiBvZiBUaGUgTWFraW5nIG9mICdUaGUgRmVsbG93c2hpcCBvZiB0aGUgUmluZycsICdUaGUgVHdvIFRvd2VycycgYW5kICdUaGUgUmV0dXJuIG9mIHRoZSBLaW5nJy4gVGhpcyBkb2N1bWVudGFyeSB0cmVhdHMgbW92aWUsIHNwZWNpYWwgZWZmZWN0IGFuZCBmYW50YXN5IGZhbnMgdG8gYSBiZWhuZC10aGUtc2NlbmVzIGxvb2sgYXQgdGhlIG1ha2luZyBvZiBUaGUgTG9yZCBvZiB0aGUgUmluZ3MsIFBldGVyIEphY2tzb24ncyBibG9ja2J1c3RlciB0aHJlZS1maWxtIGFkYXB0YXRpb24gb2YgSi5SLlIuIFRvbGtpZW4ncyBjbGFzc2ljIHdvcmsgb2YgZmljdGlvbiBhYm91dCB0aGUgYmF0dGxlIHRvIHNhdmUgTWlkZGxlIEVhcnRoIGZyb20gdGhlIHBvd2VyIG9mIFNhdXJvbiwgYW5kIHRoZSBxdWVzdCB0aGF0IG11c3QgYmUgdW5kZXJ0YWtlbiBieSBhIHNpbmdsZSBzbWFsbCBob2JiaXQuIEluY2x1ZGVzIGludGVydmlld3Mgd2l0aCBkaXJlY3RvciBKYWNrc29uLCBzdGFycyBJYW4gTWNLZWxsZW4gYW5kIEVsaWphaCBXb29kLCBhbmQgdGhlIHJlc3Qgb2YgdGhlIGNhc3QgYW5kIGNyZXcgd2hvIHNoYXJlIHNvbWUgb2YgdGhlIGV4cGVyaWVuY2VzIHRoZXkgaGFkIGluIG1ha2luZyB0aGUgZmlsbSwgYXMgd2VsbCBhcyBkaXNjdXNzIHRoZSBtYXNzaXZlIGVmZm9ydCB0aGF0IHdlbnQgaW50byBtYWtpbmcgdGhlIG15dGhzIGFuZCBtb25zdGVycyBvZiBNaWRkbGUgRWFydGggYSByZWFsaXR5LiIsInBvcHVsYXJpdHkiOjMuMDM3LCJwb3N0ZXJfcGF0aCI6Ii95WURuaGlwZDllWDNsTlRPU2prWHhiNldTRnEuanBnIiwicmVsZWFzZV9kYXRlIjoiMjAwMi0wNC0wNiIsInRpdGxlIjoiVGhlIE1ha2luZyBvZiAnVGhlIExvcmQgb2YgdGhlIFJpbmdzJyIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo3LjMsInZvdGVfY291bnQiOjR9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjpudWxsLCJnZW5yZV9pZHMiOltdLCJpZCI6NjUxMzQyLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJKLlIuUi4gVG9sa2llbiBhbmQgdGhlIEJpcnRoIE9mIFwiVGhlIExvcmQgb2YgdGhlIFJpbmdzXCIgQW5kIFwiVGhlIEhvYmJpdFwiIiwib3ZlcnZpZXciOiJJbiBhIGhvdXNlIGluIE94Zm9yZCBsaXZlZCBhIHJlbWFya2FibGUgbWFuIGNhbGxlZCBKLlIuUi4gVG9sa2llbiB3aG8gdG9sZCBzdG9yaWVzIHRoYXQgdGhyaWxsZWQgdGhlIHdvcmxkLiBUbyB0aGlzIHZlcnkgZGF5IHJlYWRlcnMgYW5kIGZpbG0gYXVkaWVuY2VzIGFyZSBlbmpveWluZyBoaXMgbWFnbmlmaWNlbnQgZXBpY3Mg4oCcVEhFIExPUkQgT0YgVEhFIFJJTkdT4oCdIGFuZCDigJxUaGUgSG9iYml04oCdIOKAkyBhZGFwdGVkIHRvIHRoZSBiaWcgc2NyZWVuIGJ5IHByb2R1Y2VyLCBQZXRlciBKYWNrc29uLiBBbHRob3VnaCBldmVyeWJvZHkgaGFzIGhlYXJkIG9mIFRvbGtpZW7igJlzIHdyaXRpbmcsIHZlcnkgZmV3IHBlb3BsZSBjb3VsZCB0ZWxsIHlvdSBtdWNoIGFib3V0IHRoZSBtYW4gcmVzcG9uc2libGUgZm9yIGNyZWF0aW5nIHRoZSBiZXN0IGxvdmVkIG1hZ2ljYWwgY3JlYXR1cmVzIHRoYXQgaGF2ZSBiZWNvbWUgaG91c2Vob2xkIG5hbWVzLiBUaGlzIHByb2dyYW0gd2lsbCBnaXZlIHlvdSBhIHJlYWwgaW5zaWdodCBpbnRvIHRoZSBtYW4gYmVoaW5kIHRoZSBsZWdlbmRzIG9mIOKAnFRIRSBMT1JEIE9GIFRIRSBSSU5HUyzigJ0gYW5kIHRoZSBwZW9wbGUgYW5kIHBsYWNlcyB0aGF0IHNoYXBlZCBoaXMgdW5pcXVlIGxpdGVyYXJ5IGdlbml1cy4gRnJvbSB0aGUgcm9sbGluZyBFbmdsaXNoIGNvdW50cnlzaWRlIHRvIHRoZSBzb290eSBzdHJlZXRzIG9mIEluZHVzdHJpYWwgQmlybWluZ2hhbSwgdGhlIGRyZWFtaW5nIHNwaXJlcyBvZiBPeGZvcmQgdG8gdGhlIFdvcmxkIFdhciBJIHRyZW5jaGVzIG9mIHRoZSBibG9vZCBzb2FrZWQgU29tbWU7IHRoaXMgaXMgdGhlIHN0b3J5IG9mIHRoZSBxdWludGVzc2VudGlhbCBFbmdsaXNoIENvbGxlZ2UgUHJvZmVzc29yIHdobyBtYWRlIGVwaWMgbXl0aG9sb2d5IGFuZCBsZWdlbmQgYWNjZXNzaWJsZSB0byBvbmUgYW5kIGFsbC4iLCJwb3B1bGFyaXR5IjoyLjQ3NSwicG9zdGVyX3BhdGgiOiIvanAwTlF0SVFUd2VuNXZIQk5jQ0syaUxLb1k3LmpwZyIsInJlbGVhc2VfZGF0ZSI6IjIwMTMtMTEtMTkiLCJ0aXRsZSI6IkouUi5SLiBUb2xraWVuIGFuZCB0aGUgQmlydGggT2YgXCJUaGUgTG9yZCBvZiB0aGUgUmluZ3NcIiBBbmQgXCJUaGUgSG9iYml0XCIiLCJ2aWRlbyI6dHJ1ZSwidm90ZV9hdmVyYWdlIjowLCJ2b3RlX2NvdW50IjowfSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6bnVsbCwiZ2VucmVfaWRzIjpbOTldLCJpZCI6MTU1NTg2LCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJDcmVhdGluZyB0aGUgTG9yZCBvZiB0aGUgUmluZ3MgU3ltcGhvbnkiLCJvdmVydmlldyI6IkNyZWF0aW5nIFRoZSBMb3JkIG9mIHRoZSBSaW5ncyBTeW1waG9ueSBpbmNsdWRlcyBleGNlcnB0cyBvZiBsaXZlIGNvbmNlcnQgZm9vdGFnZSBmcm9tIFRoZSBMb3JkIG9mIHRoZSBSaW5ncyBTeW1waG9ueTogU2l4IE1vdmVtZW50cyBmb3IgT3JjaGVzdHJhLCBDaG9ydXMgYW5kIFNvbG9pc3RzLCBkb2N1bWVudGFyeSBjb21tZW50YXJ5IGJ5IEhvd2FyZCBTaG9yZSwgYW5kIHRoZSBpbGx1c3RyYXRpb25zIG9mIEFsYW4gTGVlIGFuZCBKb2huIEhvd2UuIiwicG9wdWxhcml0eSI6MC42LCJwb3N0ZXJfcGF0aCI6bnVsbCwicmVsZWFzZV9kYXRlIjoiMjAwNC0xMi0xNCIsInRpdGxlIjoiQ3JlYXRpbmcgdGhlIExvcmQgb2YgdGhlIFJpbmdzIFN5bXBob255IiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjYuOCwidm90ZV9jb3VudCI6Mn0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvcU5WZjM5anA5ZlpTTGQxYldNWWpPcnJFa0kyLmpwZyIsImdlbnJlX2lkcyI6WzEwNzUxLDE0LDE2LDEyLDEwNzcwXSwiaWQiOjEzNjIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IlRoZSBIb2JiaXQiLCJvdmVydmlldyI6IkJpbGJvIEJhZ2dpbnMgdGhlIEhvYmJpdCB3YXMganVzdCBtaW5kaW5nIGhpcyBvd24gYnVzaW5lc3MsIHdoZW4gaGlzIG9jY2FzaW9uYWwgdmlzaXRvciBHYW5kYWxmIHRoZSBXaXphcmQgZHJvcHMgaW4gb25lIG5pZ2h0LiBPbmUgYnkgb25lLCBhIHdob2xlIGdyb3VwIG9mIGR3YXJ2ZXMgZHJvcCBpbiwgYW5kIGJlZm9yZSBoZSBrbm93cyBpdCwgQmlsYm8gaGFzIGpvaW5lZCB0aGVpciBxdWVzdCB0byByZWNsYWltIHRoZWlyIGtpbmdkb20sIHRha2VuIGZyb20gdGhlbSBieSB0aGUgZXZpbCBkcmFnb24gU21hdWcuIFRoZSBvbmx5IHByb2JsZW0gaXMgdGhhdCBHYW5kYWxmIGhhcyB0b2xkIHRoZSBkd2FydmVzIHRoYXQgQmlsYm8gaXMgYW4gZXhwZXJ0IGJ1cmdsYXIsIGJ1dCBoZSBpc24ndC4uLiIsInBvcHVsYXJpdHkiOjE3Ljc1LCJwb3N0ZXJfcGF0aCI6Ii8yb2h2eU1QaHZqZnRMck02UzZManI2UXJMMHUuanBnIiwicmVsZWFzZV9kYXRlIjoiMTk3Ny0xMS0yNyIsInRpdGxlIjoiVGhlIEhvYmJpdCIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo2LjIsInZvdGVfY291bnQiOjE4NH0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvZkJ6d1NNNXpsNHhwOUwzckZ1MVBpaG1ZMHZoLmpwZyIsImdlbnJlX2lkcyI6WzE2LDE0LDEyXSwiaWQiOjEzNjEsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IlRoZSBSZXR1cm4gb2YgdGhlIEtpbmciLCJvdmVydmlldyI6IlR3byBIb2JiaXRzIHN0cnVnZ2xlIHRvIGRlc3Ryb3kgdGhlIFJpbmcgaW4gTW91bnQgRG9vbSB3aGlsZSB0aGVpciBmcmllbmRzIGRlc3BlcmF0ZWx5IGZpZ2h0IGV2aWwgTG9yZCBTYXVyb24ncyBmb3JjZXMgaW4gYSBmaW5hbCBiYXR0bGUuIiwicG9wdWxhcml0eSI6MTMuMjgxLCJwb3N0ZXJfcGF0aCI6Ii9rOHhaUUNicDdyVUxoQmhrMDNZMngyMWpBdXkuanBnIiwicmVsZWFzZV9kYXRlIjoiMTk4MC0wNS0xMSIsInRpdGxlIjoiVGhlIFJldHVybiBvZiB0aGUgS2luZyIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo1LjgsInZvdGVfY291bnQiOjQ4fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6bnVsbCwiZ2VucmVfaWRzIjpbOTldLCJpZCI6MTkyMzQ5LCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJOYXRpb25hbCBHZW9ncmFwaGljIC0gQmV5b25kIHRoZSBNb3ZpZTogVGhlIEZlbGxvd3NoaXAgb2YgdGhlIFJpbmciLCJvdmVydmlldyI6IkEgZG9jdW1lbnRhcnkgYWJvdXQgdGhlIGluZmx1ZW5jZXMgb24gVG9sa2llbiwgY292ZXJpbmcgaW4gYnJpZWYgaGlzIGNoaWxkaG9vZCBhbmQgaG93IGhlIGRldGVzdGVkIHRoZSBvbnNsYXVnaHQgb2YgaW5kdXN0cnkgdGhyb3VnaCB0aGUgaWR5bGxpYyBjb3VudHJ5c2lkZSwgbW92aW5nIG9uIHRvIGRlc2NyaWJlIGhpcyBmaWdodGluZyBleHBlcmllbmNlIGZyb20gV1dJLCBhbmQgY2xvc2luZyB3aXRoIGEgbG9vayBhdCB0aGUgRmlubmlzaCBpbnNwaXJhdGlvbiBmb3IgdGhlIHNjaG9sYXIncyBzZWxmLWludmVudGVkIGxhbmd1YWdlcyBvZiBFbGZpc2guIEluIGJldHdlZW4gYXJlIGludGVydmlld3Mgd2l0aCB0aGUgY2FzdCBvZiB0aGUgZmlsbXMgYW5kIHNvbWUgY2xpcHMsIGJ5IGZhciB0aGUgbW9zdCBmcm9tIFwiVGhlIEZlbGxvd3NoaXAgb2YgdGhlIFJpbmdcIiwgYnV0IGEgZmV3IGdsaW1wc2VzIG9mIFJvaGFuIHJpZGVycyAoZnJvbSBcIlRoZSBUd28gVG93ZXJzXCIpIGFyZSBwcm92aWRlZC4gQWxzbywgdGhlcmUgYXJlIGludGVydmlld3Mgd2l0aCBhIHJhbmdlIG9mIHRoZSBmaWxtbWFrZXJzLiIsInBvcHVsYXJpdHkiOjcuNjkzLCJwb3N0ZXJfcGF0aCI6Ii9rbkNKdmZicjRMV05aQmtURGx3UmRNMjhQdVIuanBnIiwicmVsZWFzZV9kYXRlIjoiMjAwMS0xMi0yMyIsInRpdGxlIjoiTmF0aW9uYWwgR2VvZ3JhcGhpYyAtIEJleW9uZCB0aGUgTW92aWU6IFRoZSBGZWxsb3dzaGlwIG9mIHRoZSBSaW5nIiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjYsInZvdGVfY291bnQiOjd9XSwidG90YWxfcGFnZXMiOjEsInRvdGFsX3Jlc3VsdHMiOjExfQ==
+  recorded_at: Tue, 30 Mar 2021 17:42:23 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=2&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:40:47 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 7d08b8b3bfa4ee53486bd9ed9a954b48
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 0c0ece1f43ec7f9ba9292eb4c581296f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - gf_u3yMYXblSyZWmBiVEA81n5jvzRM_BHsy_6Z1ShD9CbmcuissRWw==
+      Age:
+      - '96'
+    body:
+      encoding: UTF-8
+      string: '{"page":2,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:23 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=3&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:40:47 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 6c75692ac18d623fa06b7ff1067d81b7
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 300fe42bf8129024da7478286a65cf77.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - jh0SNw9sIX6GQ9m2I-aDVkUH5C3nFDyYEk9KwEC5cqpFA46474NJVQ==
+      Age:
+      - '96'
+    body:
+      encoding: UTF-8
+      string: '{"page":3,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:23 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=4&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:40:47 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - c0fe2b2f1d6e6f18c3e4d4661125f81f
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 53df790f50283121a495841b9963ea24.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - q-ydAD6kA1lFbPH-8XtIHaCuS6_aXoDjxr66SQ7TOaNGJhH9Fr6_zA==
+      Age:
+      - '96'
+    body:
+      encoding: UTF-8
+      string: '{"page":4,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:23 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=5&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:40:47 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - ca721f930a18a8e47830887f36a591bc
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 054e3273b1ea8604004af961945df65e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - cMdmAikX6or-7kS-WwdZHi7jdHwcB849UTr-0Tz6MyeURlISRn4MGQ==
+      Age:
+      - '96'
+    body:
+      encoding: UTF-8
+      string: '{"page":5,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:23 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=6&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:40:47 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 7bcc51399a2bd872251f001ebd7a12e1
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 587df865a35cb229596229a4949116ae.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - 7AYPXLQn2KSEvcXQzK8GoxmzcTXSAhGZ_M7SH4JA0UIK9sMlJXKTZw==
+      Age:
+      - '97'
+    body:
+      encoding: UTF-8
+      string: '{"page":6,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:24 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=7&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:41:12 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 80640ee61b191cdb2108e52bcb172f49
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 d426049ef3907778b80f089334fa4bc4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - GXq5utY7ML9nnDWaMupKyzXdywzIFV7UgizcoW0pqR8EaHXPYcJFBQ==
+      Age:
+      - '72'
+    body:
+      encoding: UTF-8
+      string: '{"page":7,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:24 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=8&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:41:12 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 5a777af44697664229ef2574c804229d
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 de07d2c238e1555cdb3d398a5c48fc19.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - Cax2fNbO1B31rnvy8q6VMw95f3BlJvU88ftHL6_CcDBsCQ-KdfxcsQ==
+      Age:
+      - '72'
+    body:
+      encoding: UTF-8
+      string: '{"page":8,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:24 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=9&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:41:12 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 01dfbc91b966d2ab577afe4c580f1606
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 054e3273b1ea8604004af961945df65e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - jc9AdeUo12ZllpzLx7_7xmrtv9aIz2txjWbupR50wrKpQeBsv9BkrQ==
+      Age:
+      - '72'
+    body:
+      encoding: UTF-8
+      string: '{"page":9,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:24 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=10&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:41:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 9874cca8278a0cd08b3d128d397a20c2
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 587df865a35cb229596229a4949116ae.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - l0Ymt4lO5u-Y5Sjp4RDOVudXEwTzcvVS9fd7hCEIx2n9z1gH-NzBdw==
+      Age:
+      - '71'
+    body:
+      encoding: UTF-8
+      string: '{"page":10,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:24 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=11&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:41:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 51c5d32a35de56b0990f55b0cb9c5023
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 9a6e57455b553fa4fa657bcdde8c1057.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - EOie5cm7KcV-tTzVaegwRJ-fcAxX-bLxMkVc9-avkr8AfGo9GgO8wA==
+      Age:
+      - '71'
+    body:
+      encoding: UTF-8
+      string: '{"page":11,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:24 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=12&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:41:13 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 86d5047f7e4bb11456c271426367f05f
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 0a6c40f72bc055604b9d27a4570daa1b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - I-2rpifdFeD62OIbZASD_mVA4A0JxaFEi9-nTyinKU_BUPTsWVNLbw==
+      Age:
+      - '71'
+    body:
+      encoding: UTF-8
+      string: '{"page":12,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:24 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=13&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:42:25 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 4d3c746f16470815d98b2e608e535309
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 776776097c9c5473638771d24267cf4f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - kUfbnCQiz2lqCjZZReVBXj31Nfi9ZYO5yFen54oPCnXK5M-cIC4EZA==
+    body:
+      encoding: UTF-8
+      string: '{"page":13,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:25 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=14&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:42:25 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 3fc69cb239cc9806ea86da95b641bc23
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c9e91f71d3df5bdb47d5911662f0b3c2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - 7PPH6wWpBstSM_x8dcpaO_91oEX06kshFQ3rlQiH90gIez8Zv0Y5hw==
+    body:
+      encoding: UTF-8
+      string: '{"page":14,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:25 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=15&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:42:25 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - d9df54f9b0238bafa097374f021e2399
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4e9a1d1e23905e72cd7ec46bd845a3a7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - zcbYylt4ItyZqIrhexxqUk3QSSDXRux9o-iM73ThH3_ePSgEYI_Wcg==
+    body:
+      encoding: UTF-8
+      string: '{"page":15,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:25 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=16&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:42:25 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - f01c242da47ea50f06fc66f978f132bf
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b920186f8b4bb4541e72f9e499a32dd1.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - cjdWWI8HWW7r7gY2Fbjx02IiFmXuN_ThCnEDCynKWB__SmDqjW8Huw==
+    body:
+      encoding: UTF-8
+      string: '{"page":16,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:25 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=17&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:42:25 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - f840c04501b1257085193199d4bc9a6a
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ff89b29055df3eca302a6009f616ee0a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - gxGLBKuCguKbCoLF_4K-XSwIIZnMhxbBfo5CMsuFDF6Q0Q_8yZl8JA==
+    body:
+      encoding: UTF-8
+      string: '{"page":17,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:25 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=18&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:42:25 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - f55975afb0b24e858730f6b1fafc66b3
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 51f43f7212ad8e67ae9503b19380b67c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - TZqngPRqglrPQMo3jF-dFTR6hZip4PIwHmMEOLuYemRd1mVDEjNV0Q==
+    body:
+      encoding: UTF-8
+      string: '{"page":18,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:25 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=19&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:42:25 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 931dcf5ec68963315e5bf90f41b4ab4c
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ff89b29055df3eca302a6009f616ee0a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - ZpL-6Z0XjOQjDIrFRoEbJgJINw6USyrqXtXiVF5ecjRbxinKPt-F0g==
+    body:
+      encoding: UTF-8
+      string: '{"page":19,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:25 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=20&query=The%20Lord%20of%20the%20Rings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 30 Mar 2021 17:42:26 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Etag:
+      - 04e1ef0a3f48426a7a13cbfa23b725e0
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 011deabeb2c50745b948f7be2ecfa71b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - gNbsxs84Ry3wfMCzujEkdnvoKG84M8ALgKIy0srMS0J3T9k4QYnzIQ==
+    body:
+      encoding: UTF-8
+      string: '{"page":20,"results":[],"total_pages":1,"total_results":11}'
+  recorded_at: Tue, 30 Mar 2021 17:42:26 GMT
+recorded_with: VCR 6.0.0

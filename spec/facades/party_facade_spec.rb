@@ -35,10 +35,11 @@ RSpec.describe PartyFacade do
       @expected = {"#{@friend1.id}"=>"#{@friend1.id}", 
         "#{@friend2.id}"=>"#{@friend2.id}", "#{@friend3.id}"=>"false"}
       
-      @parties = PartyFacade.make_parties(@expected, @party.id)
+      @parties = PartyFacade.make_parties(@expected, @user)
 
       expect(@parties).to be_an(Array)
       expect(@parties[0]).to be_an_instance_of(UserParty)
+      expect(@parties.length).to eq 2
     end
   end
 end

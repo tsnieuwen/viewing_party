@@ -3,11 +3,12 @@ class MoviesController < ApplicationController
   before_action :authorized, only: [:index, :show]
 
   def index
-    if params[:q] == 'top_rated'
-      @movies = MovieService.top_rated_movies
-    else
-      @movies = MovieService.forty_match_movies(params[:search])
-    end
+    @movies = MovieFacade.top_rated_movies ||= MovieFacade.search(params[:search])
+    # if params[:q] == 'top_rated'
+    #   @movies = MovieService.top_rated_movies
+    # else
+    #   @movies = MovieService.forty_match_movies(params[:search])
+    # end
   end
 
   def show
