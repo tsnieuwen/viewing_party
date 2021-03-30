@@ -5,7 +5,7 @@ RSpec.describe 'As an authenticated user' do
     it 'Should have a button to create viewing party' do
       UserParty.destroy_all
       Party.destroy_all
-      Movie.destroy_all 
+      Movie.destroy_all
       user = User.create(
         email: 'foo@bar.com',
         password: 'test'
@@ -13,10 +13,9 @@ RSpec.describe 'As an authenticated user' do
       expected = Movie.all
       expect(expected).to be_empty
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
-    
+
       VCR.use_cassette('single_movie_details') do
       visit movie_path("#{Figaro.env.movie_details}")
-
       expected2 = Movie.all
       expect(expected2).not_to be_empty
       expect(page).to have_button("Create Viewing Party for The Lord of the Rings")
