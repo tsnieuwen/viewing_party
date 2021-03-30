@@ -27,7 +27,7 @@ RSpec.describe 'As an authenticated user' do
 
   describe 'When Im on my dashboard and hosting a party' do
     it 'Should show title linking to movie show page, date/time, who is hosting, list of friends my name bold' do
-      VCR.use_cassette('my_viewing_party') do
+      VCR.use_cassette('my_viewing_party2') do
         visit root_path
         click_link "I already have an account"
         fill_in :email, with: @user.email
@@ -42,9 +42,9 @@ RSpec.describe 'As an authenticated user' do
         fill_in :hour, with: "4"
         fill_in :minute, with: "30"
         select('PM', from: 'am_pm')
-        find(:xpath, "//input[@name=#{@friend1.id}]").set(true)
-        find(:xpath, "//input[@name=#{@friend2.id}]").set(true)
-        find(:xpath, "//input[@name=#{@friend3.id}]").set(true)
+        find(:xpath, "//input[@value=#{@friend1.id}]").set(true)
+        find(:xpath, "//input[@value=#{@friend2.id}]").set(true)
+        find(:xpath, "//input[@value=#{@friend3.id}]").set(true)
         click_button('Create Party')
 
         within('.parties') do

@@ -16,8 +16,8 @@
   <h4>Include</h4>
 
   <% friends.each do |friend| %>
-  <%= form.check_box friend.id, {:class => "myclass", :style => "mystyle"}, "invited", "not-invited" %>
-  <%= form.label "#{friend.email}" %>
+    <%= form.check_box "invited[#{friend.id}]", {:class => "myclass", :style => "mystyle"}, "#{friend.id}", "false" %>
+    <%= form.label "#{friend.email}" %>
   <% end %>
   <%= form.submit('Create Party') %>
 <% end %>

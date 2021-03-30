@@ -67,7 +67,7 @@ RSpec.describe 'As an authenticated user' do
     end
 
     it 'Search only returns 40 results' do
-      VCR.use_cassette('Find Movies 2') do
+      VCR.use_cassette('Find Movies 3') do
         visit discover_index_path
 
         fill_in :search, with: 'The'

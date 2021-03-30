@@ -52,7 +52,7 @@ RSpec.describe 'As an authenticated user' do
     end
 
     it 'Should redirect to the dashboard where new event is shown no friends' do
-      VCR.use_cassette('single_movie_details3') do
+      VCR.use_cassette('single_movie_details30') do
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
         visit movie_path("#{Figaro.env.movie_details}")
         click_button 'Create Viewing Party for The Lord of the Rings'
@@ -77,7 +77,7 @@ RSpec.describe 'As an authenticated user' do
     end
 
     it 'Displays invited for friends that are invited' do
-      VCR.use_cassette('single_movie_details5') do
+      VCR.use_cassette('single_movie_details60') do
         visit root_path
         click_link "I already have an account"
         fill_in :email, with: @user.email
@@ -93,8 +93,8 @@ RSpec.describe 'As an authenticated user' do
         fill_in :hour, with: "4"
         fill_in :minute, with: "30"
         select('PM', from: 'am_pm')
-        find(:xpath, "//input[@name=#{@friend1.id}]").set(true)
-        find(:xpath, "//input[@name=#{@friend2.id}]").set(true)
+        find(:xpath, "//input[@value=#{@friend1.id}]").set(true)
+        find(:xpath, "//input[@value=#{@friend2.id}]").set(true)
         click_button('Create Party')
 
         expect(current_path).to eq(dashboard_path)
