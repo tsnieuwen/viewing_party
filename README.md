@@ -4,6 +4,7 @@ This is the base repo for the [viewing party project](https://backend.turing.io/
 
 Application built to discover movies, and create parties that you can invite your friends to. You will need to register as a user to access dashboard features. You can then see Top Rated Movies, or search for a movie by name. Also once registered you will be able to enter the chatroom, where you can live chat with other Viewing Party users.
 
+
 ## Table of Contents
 
   - [Authors](#authors)
