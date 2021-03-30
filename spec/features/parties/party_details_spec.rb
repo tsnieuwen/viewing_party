@@ -27,7 +27,7 @@ RSpec.describe 'As an authenticated user' do
 
   describe 'When Im on my dashboard and hosting a party' do
     it 'Should show title linking to movie show page, date/time, who is hosting, list of friends my name bold' do
-      VCR.use_cassette('my_viewing_party') do
+      VCR.use_cassette('my_viewing_party2') do
         visit root_path
         click_link "I already have an account"
         fill_in :email, with: @user.email

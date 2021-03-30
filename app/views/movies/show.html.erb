@@ -20,12 +20,12 @@
 <%= @movie_info.vote_average %>
 
 <h4> Cast </h4>
-<% @cast.each do |member| %>
+<% @details[:all_cast].each do |member| %>
 <li><%= member[:name] %> as <%= member[:character] %></li>
 <% end %>
 
 <h2>Reviews</h2>
-Total Reviews: <%= @reviews.count %>
-<% @reviews.each do |review| %>
+Total Reviews: <%= @details[:all_reviews].count %>
+<% @details[:all_reviews].each do |review| %>
 <li><%= review[:author] %>: <%= review[:content] %></li><br>
 <% end %>
