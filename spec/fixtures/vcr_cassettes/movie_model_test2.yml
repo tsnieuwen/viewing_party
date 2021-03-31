@@ -52,13 +52,13 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 d5385d9a6bccb3289338c8f9df4440ac.cloudfront.net (CloudFront)
+      - 1.1 62223de0c21500c1b860f7e075e09f40.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - MIA3-C5
       X-Amz-Cf-Id:
-      - 6cpAMnUjMyk0zmqyApu5xKH3JBbdF6NbXcdauDuFiXdpT3itgx5olg==
+      - fhxzDjOQNSps2z1B2TzSBpbWcD1-Eryw6cuSUzxiEMefzX4Sx0Fuag==
       Age:
-      - '8547'
+      - '12372'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/jOuCWdh0BE6XPu2Vpjl08wDAeFz.jpg","belongs_to_collection":null,"budget":4000000,"genres":[{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"}],"homepage":"","id":123,"imdb_id":"tt0077869","original_language":"en","original_title":"The
@@ -68,5 +68,5 @@ http_interactions:
         Zaentz Film Productions","origin_country":""}],"production_countries":[{"iso_3166_1":"ES","name":"Spain"},{"iso_3166_1":"GB","name":"United
         Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1978-11-15","revenue":30471420,"runtime":132,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fantasy...beyond
         your imagination","title":"The Lord of the Rings","video":false,"vote_average":6.5,"vote_count":541}'
-  recorded_at: Wed, 31 Mar 2021 02:55:10 GMT
+  recorded_at: Wed, 31 Mar 2021 03:58:55 GMT
 recorded_with: VCR 6.0.0

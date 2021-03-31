@@ -1,9 +1,14 @@
-<h1><%= @movie_info.title %></h1>
+<center>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-8"><%= @movie_info.title %></h1>
+  </div>
+</div>
 
-<%= image_tag "#{@movie.send_poster_info}" %><br>
+<%= image_tag "#{@movie.send_poster_info}" %><br><br>
 
-<%= button_to "Create Viewing Party for #{@movie_info.title}", new_party_path,
- params:{api_id: "#{@movie_info.api_id}"}, method: :get %><br>
+<div class='dash-btn'><%= button_to "Create Viewing Party for #{@movie_info.title}", new_party_path,
+ params:{api_id: "#{@movie_info.api_id}"}, method: :get %></div><br>
 
 <h4> Summary </h4>
 <%= @movie_info.summary %>
@@ -33,4 +38,6 @@ Total Reviews: <%= @details[:all_reviews].count %>
     <% end %>
   </blockquote>
 </div>
+
+</center>
 

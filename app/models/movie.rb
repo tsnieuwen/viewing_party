@@ -8,6 +8,6 @@ class Movie < ApplicationRecord
 
   def send_poster_info
     movie = MovieService.show_movie(api_id)
-    "https://image.tmdb.org/t/p/w92#{movie.poster}"
+    "https://image.tmdb.org/t/p/w154#{movie.poster}"
   end
 end

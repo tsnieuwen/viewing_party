@@ -1,16 +1,36 @@
-<h1>Hello <%= current_user.email %>!</h1>
+<center>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-8">Hello <%= current_user.email %>!</h1>
+  </div>
+</div>
+
 
 <%= form_with url: movies_path, method: :get, local: true do |form| %>
-  <%= form.text_field(:search, value: ("Search by movie title"))%><br>
-  <%= form.submit('Find Movies') %>
+  <%= form.text_field(:search, value: ("Search by movie title"))%><br><br>
+  <div class='dash-btn'><%= form.submit('Find Movies') %></div>
 <% end %><br>
 
-<%= button_to 'Find Top Rated Movies', movies_path,
- params: { q: :top_rated }, method: :get %><br>
+<div class='dash-btn'><%= button_to 'Find Top Rated Movies', movies_path,
+ params: { q: :top_rated }, method: :get %></div><br><br>
 
+
+<div class="container">
+<div class="table-wrapper-scroll-y my-custom-scrollbar">         
+  <table class="table"><thead>
+      <tr>
+        <th>Movie Title</th>
+        <th>Movie Vote Average</th>
+      </tr>
+    </thead>
+    <tbody>
   <% @movies.each do |movie| %>
-    <p><%= link_to movie.title, "/movies/#{movie.api_id}" %>               Vote Average: <%= movie.rating %></p>
+    <tr><td><%= link_to movie.title, "/movies/#{movie.api_id}" %></td>               <td>Vote Average: <%= movie.rating %></td></tr>
   <% end %>
+  </tbody>
+  </table>
+  </div>
+</div>
 
   <%if @movies.empty? %>
     <p><%= "No movies matched your search and you should feel bad" %></p>

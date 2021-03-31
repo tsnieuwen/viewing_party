@@ -17,15 +17,14 @@ background-repeat: no-repeat; background-position: center; opacity: 0.6; backgro
 <!-- Jumbotron -->
 <br>
 <br>
-
-
+<br>
 
 
 <center>
 <section class="user_actions">
 <% if logged_in == false %>
-  <%= link_to 'I already have an account', login_path %><br><br>
-  <%= link_to 'Register as a User', new_user_path %>
+  <%= link_to 'I already have an account', login_path, {class: 'badge badge-info'} %><br><br><br>
+  <%= link_to 'Register as a User', new_user_path, {class: 'badge badge-info'}%>
 <% end %>
 </section>
 </center>

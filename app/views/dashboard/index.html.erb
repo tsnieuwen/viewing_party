@@ -1,6 +1,11 @@
-<h1>Welcome <%= current_user.email %>!</h1>
+<center>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-8">Welcome <%= current_user.email %>!</h1>
+  </div>
+</div>
 
-<%= button_to 'Discover Movies', discover_index_path, method: :get %>
+<div class='dash-btn'><%= button_to 'Discover Movies', discover_index_path, method: :get %></div>
 
 <section class="friends">
   <h3>Friends</h3>
@@ -10,3 +15,4 @@
 
 <%= render partial: 'viewing_parties',
 locals: { parties: @parties } %>
+</center>
