@@ -41,7 +41,7 @@ RSpec.describe 'As an authenticated user' do
       end
     end
 
-    it 'Party should not be created if duration less than that of movie' do
+    it '~Sad Path~ Party should not be created if duration less than that of movie' do
       VCR.use_cassette('single_movie_details2') do
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
         visit movie_path("#{Figaro.env.movie_details}")

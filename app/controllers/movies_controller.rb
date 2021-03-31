@@ -8,6 +8,10 @@ class MoviesController < ApplicationController
               else
                 MovieFacade.search(params[:search])
               end
+    return unless @movies.nil?
+
+    flash[:notice] = 'An error occured, please try again'
+    redirect_to discover_index_path
   end
 
   def show

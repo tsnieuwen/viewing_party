@@ -24,8 +24,6 @@ http_interactions:
       - chunked
       Connection:
       - keep-alive
-      Date:
-      - Tue, 30 Mar 2021 17:58:30 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -35,8 +33,6 @@ http_interactions:
       Access-Control-Expose-Headers:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
-      Cache-Control:
-      - public, max-age=21600
       X-Memc:
       - HIT
       X-Memc-Key:
@@ -45,20 +41,22 @@ http_interactions:
       - '17713'
       X-Memc-Expires:
       - '3887'
+      Date:
+      - Wed, 31 Mar 2021 00:32:43 GMT
+      Cache-Control:
+      - public, max-age=21600
       Etag:
       - W/"2c4988d7ba804a2cc226602f2e98de4e"
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Hit from cloudfront
+      - RefreshHit from cloudfront
       Via:
-      - 1.1 83e0cde0838dfbbd5f585d5a8b60be2f.cloudfront.net (CloudFront)
+      - 1.1 0a6c40f72bc055604b9d27a4570daa1b.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - MIA3-C5
       X-Amz-Cf-Id:
-      - CIO7MsuDBcE2mnA2BSDobbP9yFFF597j9oaS4ONctox9mkRxenzKIA==
-      Age:
-      - '14740'
+      - YJXubKtZTKnPEXwJ-T2WbDSWGhk-8LyuNW-hLfKVByEXFyMeFiYGiw==
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/jOuCWdh0BE6XPu2Vpjl08wDAeFz.jpg","belongs_to_collection":null,"budget":4000000,"genres":[{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"}],"homepage":"","id":123,"imdb_id":"tt0077869","original_language":"en","original_title":"The
@@ -68,5 +66,5 @@ http_interactions:
         Zaentz Film Productions","origin_country":""}],"production_countries":[{"iso_3166_1":"ES","name":"Spain"},{"iso_3166_1":"GB","name":"United
         Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1978-11-15","revenue":30471420,"runtime":132,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fantasy...beyond
         your imagination","title":"The Lord of the Rings","video":false,"vote_average":6.5,"vote_count":541}'
-  recorded_at: Tue, 30 Mar 2021 22:04:10 GMT
+  recorded_at: Wed, 31 Mar 2021 00:32:43 GMT
 recorded_with: VCR 6.0.0

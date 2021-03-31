@@ -9,9 +9,9 @@
  params: { q: :top_rated }, method: :get %><br>
 
   <% @movies.each do |movie| %>
-  <p><%= link_to movie.title, "/movies/#{movie.api_id}" %>               Vote Average: <%= movie.rating %></p>
+    <p><%= link_to movie.title, "/movies/#{movie.api_id}" %>               Vote Average: <%= movie.rating %></p>
   <% end %>
 
   <%if @movies.empty? %>
-  <p><%= "No movies matched your search and you should feel bad" %></p>
+    <p><%= "No movies matched your search and you should feel bad" %></p>
   <% end  %>
