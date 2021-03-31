@@ -35,7 +35,7 @@ RSpec.describe MovieFacade do
 
         expect(details).to be_a(Hash)
         expect(details[:all_reviews].length).to eq 3
-        expect(details[:all_cast].length).to eq 30
+        expect(details[:all_cast].length).to eq 10
       end
     end
   end

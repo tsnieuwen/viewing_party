@@ -25,6 +25,9 @@
       <li class="nav-item active">
         <a class="nav-link"><%= link_to 'Home', root_path %> <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link"><%= link_to 'Back', :back %> <span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item">
         <a class="nav-link"><% if current_user && logged_in == true %>
                                 <%= link_to 'Dashboard', dashboard_path %>

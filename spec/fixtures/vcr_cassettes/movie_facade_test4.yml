@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 30 Mar 2021 19:58:41 GMT
+      - Wed, 31 Mar 2021 02:49:40 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -38,27 +38,27 @@ http_interactions:
       Cache-Control:
       - public, max-age=21600
       X-Memc:
-      - HIT
+      - MISS, STORE
       X-Memc-Key:
       - e8528306e5473cd985bb4ac12e70f32fdcb3d66a
       X-Memc-Age:
-      - '7514'
+      - '0'
       X-Memc-Expires:
-      - '14086'
-      Etag:
-      - W/"11e92ebf84c36de84896c5a79416721d"
+      - '21600'
+      Last-Modified:
+      - '2021-03-10 03:25:12 +0000'
       Vary:
       - Accept-Encoding
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 62223de0c21500c1b860f7e075e09f40.cloudfront.net (CloudFront)
+      - 1.1 9cfb0c812e907426eddd8ac307c4b148.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - MIA3-C5
       X-Amz-Cf-Id:
-      - rhWZnxzivRJFXQBWXZ97zMefYe5s_MixU4e33rNwqOhWENAVWY9UMA==
+      - fAAFHKrn56dHhYcOPTIwLw5l82UaO-VU37StoD7FmlYMhGmoxmjxhA==
       Age:
-      - '16442'
+      - '318'
     body:
       encoding: ASCII-8BIT
       string: '{"id":100,"page":1,"results":[{"author":"BradFlix","author_details":{"name":"","username":"BradFlix","avatar_path":null,"rating":null},"content":"I
@@ -70,7 +70,7 @@ http_interactions:
         one of my favorite movies of all time. Watched again recently and realised
         how well written, brilliantly shot, beautifully cast and cleverly produced
         this movie actually is!","created_at":"2017-01-09T12:24:47.234Z","id":"5873810f9251410e71009a68","updated_at":"2017-01-09T14:11:51.288Z","url":"https://www.themoviedb.org/review/5873810f9251410e71009a68"}],"total_pages":1,"total_results":3}'
-  recorded_at: Wed, 31 Mar 2021 00:32:43 GMT
+  recorded_at: Wed, 31 Mar 2021 02:54:58 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/100/reviews?api_key=DONT_LOOK&language=en-US&page=2
@@ -96,7 +96,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 30 Mar 2021 19:58:41 GMT
+      - Wed, 31 Mar 2021 02:49:41 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -121,17 +121,17 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 20bc622f1ab2d0cf2a816c8474ae78bf.cloudfront.net (CloudFront)
+      - 1.1 23c0665e837e408849a5c6eada365d04.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - MIA3-C5
       X-Amz-Cf-Id:
-      - j7N7wc20ZOqcJc9SiC5Ul8KCFpJhYmhFl0AeTVKi0JR5irhephtMyg==
+      - AvRhfpboHUrZEqpdu6s0ZESIB5ajsvbc35zTbJQM902dVfgzHpzvVg==
       Age:
-      - '16443'
+      - '317'
     body:
       encoding: UTF-8
       string: '{"id":100,"page":2,"results":[],"total_pages":1,"total_results":3}'
-  recorded_at: Wed, 31 Mar 2021 00:32:44 GMT
+  recorded_at: Wed, 31 Mar 2021 02:54:58 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/100/credits?api_key=DONT_LOOK&language=en-US
@@ -156,8 +156,6 @@ http_interactions:
       - chunked
       Connection:
       - keep-alive
-      Date:
-      - Tue, 30 Mar 2021 19:59:23 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -167,8 +165,6 @@ http_interactions:
       Access-Control-Expose-Headers:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
-      Cache-Control:
-      - public, max-age=21600
       X-Memc:
       - HIT
       X-Memc-Key:
@@ -177,6 +173,10 @@ http_interactions:
       - '14639'
       X-Memc-Expires:
       - '6961'
+      Date:
+      - Wed, 31 Mar 2021 02:49:41 GMT
+      Cache-Control:
+      - public, max-age=21600
       Etag:
       - W/"a2b2157c49d2f2b1afb2f959ae98abb4"
       Vary:
@@ -184,13 +184,13 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 7893def1fcfa053ac53965f46f4728ee.cloudfront.net (CloudFront)
+      - 1.1 0c0ece1f43ec7f9ba9292eb4c581296f.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - MIA3-C5
       X-Amz-Cf-Id:
-      - J0cU2nj7Fn6XQC2HQ73xF1rC1fdiJOmoOJgqvv00Fjajx3_Boofb3w==
+      - 8Bq0gwH7VNUBWc5Qa_Zn_c6cMZb6nKhAU6iPEPbgbyHyh8p14o4kOQ==
       Age:
-      - '16401'
+      - '317'
     body:
       encoding: ASCII-8BIT
       string: '{"id":100,"cast":[{"adult":false,"gender":2,"id":973,"known_for_department":"Acting","name":"Jason
@@ -257,5 +257,5 @@ http_interactions:
         Hollands","original_name":"Sy Hollands","popularity":0.98,"profile_path":null,"credit_id":"5c36d5e4c3a3685eef27933c","department":"Crew","job":"Stunt
         Driver"},{"adult":false,"gender":2,"id":1616303,"known_for_department":"Acting","name":"Richard
         Graydon","original_name":"Richard Graydon","popularity":1.4,"profile_path":"/8T9i8DUKbk8pco4UG5KjzKWLnZX.jpg","credit_id":"5c36d4e2c3a3685ee9279074","department":"Crew","job":"Stunts"}]}'
-  recorded_at: Wed, 31 Mar 2021 00:32:44 GMT
+  recorded_at: Wed, 31 Mar 2021 02:54:58 GMT
 recorded_with: VCR 6.0.0

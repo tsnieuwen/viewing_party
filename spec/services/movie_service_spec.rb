@@ -21,13 +21,13 @@ RSpec.describe MovieService do
       end
     end
     it "reviews" do
-      VCR.use_cassette('movie_service_test3') do
+      VCR.use_cassette('movie_service_test30') do
         input = "100"
         details = MovieService.reviews(input)
 
         expect(details).to be_a(Hash)
         expect(details[:all_reviews].length).to eq 3
-        expect(details[:all_cast].length).to eq 30
+        expect(details[:all_cast].length).to eq 10
       end
     end
   end

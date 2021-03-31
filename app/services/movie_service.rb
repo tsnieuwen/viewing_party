@@ -45,7 +45,8 @@ class MovieService
   def self.cast(api_id)
     response = conn.get("3/movie/#{api_id}/credits")
     attributes = JSON.parse(response.body, symbolize_names: true)
-    full_cast = attributes[:cast].length
-    attributes[:cast][0..full_cast]
+    cast = attributes[:cast].length
+    cast = 9 if cast > 10
+    attributes[:cast][0..cast]
   end
 end
