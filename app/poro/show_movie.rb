@@ -1,7 +1,7 @@
 class ShowMovie
-	attr_reader :api_id,
-							:title,
-							:summary,
+  attr_reader :api_id,
+              :title,
+              :summary,
               :runtime,
               :vote_average,
               :genres,
@@ -9,8 +9,8 @@ class ShowMovie
               :minutes,
               :poster
 
-	def initialize(data)
-		@api_id = data[:id]
+  def initialize(data)
+    @api_id = data[:id]
     @title = data[:title]
     @summary = data[:overview]
     @hours = (data[:runtime] / 60)
@@ -19,5 +19,5 @@ class ShowMovie
     @vote_average = data[:vote_average]
     @genres = data[:genres]
     @poster = data[:poster_path]
-	end
+  end
 end

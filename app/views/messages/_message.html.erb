@@ -1,20 +1,4 @@
-<div class="table-wrapper-scroll-y my-custom-scrollbar">
-
-  <table class="table table-bordered table-striped mb-0">
-    <thead>
-      <tr>
-        <th scope="col">User</th>
-        <th scope="col">Message</th>
-        <th scope="col">Time</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-      <td><em><%= message.user.email %></em></td> 
+<em><tr><td><%= message.user.email %></td>
       <td><%= message.body %></td>
       <td><%= message.created_at %></td>
-      <td><%= button_to 'Delete Message', message_path(message.id), method: :delete %></td></tr>
-    </tbody>
-  </table>
-
-</div>
+      <td><%= button_to 'Delete Message', message_path(message.id), method: :delete %></td></tr></em>

@@ -1,12 +1,12 @@
 class MessagesController < ApplicationController
   def create
-    new_message = Message.new(message_params)  
-    if new_message.save
-      ActionCable.server.broadcast "chatroom_channel",
-                                                      expected: message_render(new_message)
-    end
+    new_message = Message.new(message_params)
+    return unless new_message.save
+
+    ActionCable.server.broadcast 'chatroom_channel',
+                                 expected: message_render(new_message)
   end
-  
+
   def destroy
     Message.destroy(params[:id])
     redirect_to chat_index_path
@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:body, :user_id)  
+    params.require(:message).permit(:body, :user_id)
   end
 
   def message_render(message)

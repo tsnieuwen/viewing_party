@@ -31,7 +31,7 @@ RSpec.describe 'User registration form' do
     expect(page).to have_content("Hello funbucket13!")
   end  
   
-  scenario "Sad path if passwords don't match" do
+  scenario "~Sad path~ if passwords don't match" do
     visit root_path
 
     click_on "Register as a User"

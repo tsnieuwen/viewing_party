@@ -1,11 +1,17 @@
-<h1>Hello <%= current_user.email %>!</h1>
+<center>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-8">Hello <%= current_user.email %>!</h1>
+  </div>
+</div>
 
-<%= button_to 'Find Top Rated Movies', movies_path,
- params: { q: :top_rated }, method: :get %>
+<div class='dash-btn'><%= button_to 'Find Top Rated Movies', movies_path,
+ params: { q: :top_rated }, method: :get %></div>
 
-<h3>OR</h3>
+<h3>OR</h3><br>
 
 <%= form_with url: movies_path, method: :get, local: true do |form| %>
   <%= form.text_field(:search, value: ("Search by movie title"))%><br>
-  <%= form.submit('Find Movies') %>
+  <div class='dash-btn'><%= form.submit('Find Movies') %></div>
 <% end %>
+</center>

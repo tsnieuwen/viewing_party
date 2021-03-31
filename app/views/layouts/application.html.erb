@@ -3,6 +3,9 @@
   <head>
     <title>ViewingParty</title>
     <%= csrf_meta_tags %>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -12,7 +15,7 @@
   
   <%# nav bar %>
 <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
   <a class="navbar-brand" href="#">Viewing Party</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -21,6 +24,9 @@
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link"><%= link_to 'Home', root_path %> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link"><%= link_to 'Back', :back %> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link"><% if current_user && logged_in == true %>
@@ -42,7 +48,7 @@
 
     <div class="container">
     <% flash.each do |name, message| %>
-      <%= message %>
+      <div class="alert alert-primary alert-dismissible fade show" role="alert"><%= message %></div>
     <% end%>
     </div>
 
@@ -52,6 +58,7 @@
     </main>
 
 
+    <div class="container">
     <footer>
       <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="The MovieDB Logo" width="75px" style="margin:10px" >
       <div>
@@ -61,7 +68,8 @@
         <p>
           Further citation information regarding the movie data used in this project can be found <a href="http://files.grouplens.org/datasets/movielens/ml-latest-small-README.html">here.</a>
         </p>
-      </div>
+        </div>
     </footer>
+      </div>
   </body>
 </html>

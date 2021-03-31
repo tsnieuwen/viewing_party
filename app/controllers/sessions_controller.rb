@@ -1,7 +1,5 @@
 class SessionsController < ApplicationController
-
-  def new
-  end
+  def new; end
 
   def login
     user = User.find_by(email: params[:email].downcase)
@@ -10,14 +8,14 @@ class SessionsController < ApplicationController
       flash[:message] = "Welcome #{user.email}!"
       redirect_to root_path
     else
-      flash[:message] = "Incorrect Credentials"
+      flash[:message] = 'Incorrect Credentials'
       render :new
     end
   end
 
   def logout
-      session[:user_id] = nil
-      flash[:message] = "You have been logged out"
-      redirect_to root_path
+    session[:user_id] = nil
+    flash[:message] = 'You have been logged out'
+    redirect_to root_path
   end
 end

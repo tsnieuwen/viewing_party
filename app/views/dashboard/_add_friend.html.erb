@@ -1,5 +1,5 @@
 <%= form_with url: new_friendship_path, local: true, method: :get do |f|%>
   <%= f.text_field :email, placeholder: "Friend's Email" %>
 
-  <%= f.submit 'Add Friend' %>
+  <div class='dash-btn'><%= f.submit 'Add Friend' %></div>
 <% end %>

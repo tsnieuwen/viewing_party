@@ -56,7 +56,7 @@ RSpec.describe 'As an authenticated user' do
     end
     end
 
-    scenario 'When the friend doesnt exist theyre not shown' do
+    scenario '~Sad Path~ When the friend doesnt exist theyre not shown' do
       visit root_path
       click_link 'Dashboard'
 

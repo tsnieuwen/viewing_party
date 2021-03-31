@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=1&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Mar 2021 03:57:33 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=600
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 011deabeb2c50745b948f7be2ecfa71b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - m_umkD3dAQP2yJwO2minDcyDcYGs0mz7h5bZCZ1iOERJ6wb5DaUw9Q==
+      Age:
+      - '75'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/sw7mordbZxgITU877yTpZCud90M.jpg","genre_ids":[18,80],"id":769,"original_language":"en","original_title":"GoodFellas","overview":"The
+        true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is
+        adopted by neighbourhood gangsters at an early age and climbs the ranks of
+        a Mafia family under the guidance of Jimmy Conway.","popularity":21.827,"poster_path":"/6QMSLvU5ziIL2T6VrkaKzN2YkxK.jpg","release_date":"1990-09-12","title":"GoodFellas","video":false,"vote_average":8.4,"vote_count":8733},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":696842,"original_language":"en","original_title":"Scorsese''s
+        Goodfellas","overview":"In this produced by Brett Ratner new retrospective
+        documentary we hear from cast members and additional participants include
+        Harvey Keitel, Leonardo DiCaprio and Terence Winter, creator of Boardwalk
+        Empire and screenwriter of The Wolf of Wall Street. The program gives us thoughts
+        about Scorsese''s approach to the material, casting, characters, and performances,
+        costumes and period details, photography, music, and retrospective thoughts
+        about the film. It is filled with memorable stories and observations from
+        a wide array of commentators.","popularity":1.412,"poster_path":"/eQPjyYlRduhxDP7To0kMfMaOkiU.jpg","release_date":"2015-05-05","title":"Scorsese''s
+        Goodfellas","video":true,"vote_average":8,"vote_count":5}],"total_pages":1,"total_results":2}'
+  recorded_at: Wed, 31 Mar 2021 03:58:48 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=DONT_LOOK&include_adult=false&language=en-US&page=2&query=GoodFellas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Wed, 31 Mar 2021 03:57:33 GMT
+      Cache-Control:
+      - public, max-age=600
+      Etag:
+      - 11763acc8ba9ee49f1f166ce39a34730
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 d5462dd4ef6298c414e47ebf5881a62b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - D-XVuwAWCFLabO7SRIwmFYlmo3lV_y6rYwfwOQkBZdopDF4pFrwRiQ==
+      Age:
+      - '75'
+    body:
+      encoding: UTF-8
+      string: '{"page":2,"results":[],"total_pages":1,"total_results":2}'
+  recorded_at: Wed, 31 Mar 2021 03:58:48 GMT
+recorded_with: VCR 6.0.0

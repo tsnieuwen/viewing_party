@@ -31,11 +31,11 @@ RSpec.describe MovieFacade do
     it "#get_details" do
       VCR.use_cassette('movie_facade_test4') do
         input = "100"
-        details = MovieFacade.get_details(input)
+        details = MovieFacade.movie_details(input)
 
         expect(details).to be_a(Hash)
         expect(details[:all_reviews].length).to eq 3
-        expect(details[:all_cast].length).to eq 30
+        expect(details[:all_cast].length).to eq 10
       end
     end
   end
