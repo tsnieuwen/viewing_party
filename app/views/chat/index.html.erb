@@ -31,7 +31,22 @@
       <!-- Grid column -->
 
       <div class="feed" id="message-container">
+      <div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">User</th>
+        <th scope="col">Message</th>
+        <th scope="col">Time</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
         <%= render @messages %>
+        </tbody>
+  </table>
+
+</div>
       </div>
             
           </ul>
