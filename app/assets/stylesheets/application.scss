@@ -15,6 +15,45 @@
  */
 @import "bootstrap";
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #17a2b8;
+  height: 100vh;
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+body {
+  background-color: gray;
+}
+
+a {
+  color: white;
+}
+
+h2 {
+  text-shadow: 2px 0 0 rgb(5, 5, 5), -2px 0 0 rgb(2, 2, 2), 0 2px 0 rgb(5, 5, 5), 0 -2px 0 rgb(3, 3, 3), 1px 1px rgb(3, 3, 3), -1px -1px 0 rgb(3, 3, 3), 1px -1px 0 rgb(2, 2, 2), -1px 1px 0 rgb(5, 5, 5);
+}
+
+h3 {
+  font-family: arial, sans-ser;
+}
+
 .my-custom-scrollbar {
   position: relative;
   height: 120px;

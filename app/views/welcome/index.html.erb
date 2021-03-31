@@ -1,12 +1,31 @@
-<h1>Welcome to Viewing Party</h1>
+<!-- Jumbotron -->
+<div class="card card-image" style="background-image: url(https://www.caasco.com/-/media/CAA-Magazine-Content/Articles/OutdoorMovies-thumb.jpg?h=500&w=1000&la=en&hash=4B2B26892BCE1EAC2A450C00AA4FE29A);
+background-repeat: no-repeat; background-position: center; opacity: 0.6; background-color: gray; border-style: none;">
 
-<section class="description">
-  <p>Invite your friends to a viewing party!</p>
-</section>
+  <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+    <div class="py-5">
 
+      <!-- Content -->
+      <h5 class="h5 orange-text"><i class="fas fa-camera-retro"></i></h5>
+      <h2>Welcome to Viewing Party</h2>
+      <p>Invite your friends to a viewing party!</p>
+      <a class="btn peach-gradient"><i class="fas fa-clone left"></i></a>
+
+    </div>
+  </div>
+</div>
+<!-- Jumbotron -->
+<br>
+<br>
+
+
+
+
+<center>
 <section class="user_actions">
 <% if logged_in == false %>
-  <%= link_to 'I already have an account', login_path %><br>
+  <%= link_to 'I already have an account', login_path %><br><br>
   <%= link_to 'Register as a User', new_user_path %>
 <% end %>
 </section>
+</center>

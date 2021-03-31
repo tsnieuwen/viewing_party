@@ -6,8 +6,6 @@ RSpec.describe "When a user visits the home page" do
 
     expect(current_path).to eq(root_path)
     expect(page).to have_content("Welcome to Viewing Party")
-    within(".description") do
-      expect(page).to have_content("Invite your friends to a viewing party!")
-    end
+    expect(page).to have_content("Invite your friends to a viewing party!")
   end
 end
