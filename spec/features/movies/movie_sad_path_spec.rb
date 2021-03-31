@@ -23,5 +23,14 @@ RSpec.describe 'As an authenticated user' do
       expect(page).to have_content("An error occured, please try again")
       end
     end
+    it 'It redirects me to a discover page with error message for show page error' do
+      VCR.use_cassette('movie_sad_path2') do
+      allow(MovieFacade).to receive(:show_movie).and_return(nil)
+      visit movie_path("#{Figaro.env.movie_details}")
+
+      expect(current_path).to eq(discover_index_path)
+      expect(page).to have_content("An error occured, please try again")
+      end
+    end
   end
 end

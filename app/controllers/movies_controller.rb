@@ -18,6 +18,11 @@ class MoviesController < ApplicationController
     @movie = Movie.find_by(api_id: params[:id])
     @movie_info = MovieFacade.show_movie(@movie.api_id)
     @details = MovieFacade.movie_details(@movie.api_id)
+
+    return unless @movie.nil? || @movie_info.nil?
+
+    flash[:notice] = 'An error occured, please try again'
+    redirect_to discover_index_path
   end
 
   private
