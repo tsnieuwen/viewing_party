@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bootsnap'
 gem 'jbuilder', '~> 2.5'
 
+# AWS
+gem 'aws-sdk', '~> 3'
 
 # Api
 gem 'faraday'
