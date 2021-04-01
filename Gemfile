@@ -20,6 +20,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'faraday'
 gem 'figaro'
 gem 'mimemagic', '~> 0.3.8'
+gem 'redis-rails'
 
 # Authentication
 gem 'bcrypt'
