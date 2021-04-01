@@ -77,7 +77,7 @@ RSpec.describe 'As an authenticated user' do
     end
 
     it 'Displays invited for friends that are invited' do
-      VCR.use_cassette('single_movie_details60') do
+      VCR.use_cassette('single_movie_details65') do
         visit root_path
         click_link "I already have an account"
         fill_in :email, with: @user.email
