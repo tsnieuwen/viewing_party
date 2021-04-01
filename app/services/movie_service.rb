@@ -57,9 +57,9 @@ class MovieService
       key[:name].titleize
     end
   end
-  
+
   def self.latest
-    response = conn.get("3/movie/latest")
+    response = conn.get('3/movie/latest')
     attributes = JSON.parse(response.body, symbolize_names: true)
     ShowMovie.new(attributes)
   end
