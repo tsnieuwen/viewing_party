@@ -14,4 +14,9 @@
   <%= form.text_field(:search, value: ("Search by movie title"))%><br>
   <div class='dash-btn'><%= form.submit('Find Movies') %></div>
 <% end %>
+
+<br>
+<br>
+<h4>Latest Movie:</h4>
+<%= link_to "#{@latest.title}", movie_path(@latest.api_id) %>
 </center>

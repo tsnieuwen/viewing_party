@@ -22,25 +22,30 @@ RSpec.describe 'As an authenticated user' do
 
   describe 'When I click ~Discover Movies~ button' do
     it 'It redirects me to a discover page' do
+      VCR.use_cassette('discover100') do
       visit dashboard_path
 
       click_button 'Discover Movies'
 
       expect(current_path).to eq(discover_index_path)
+      end
     end
   end
 
   describe 'When I visit the discover page' do
     it 'Has a button to discover top 40 movies' do
+      VCR.use_cassette('discover1') do
       visit discover_index_path
 
       expect(page).to have_button('Find Top Rated Movies')
+      end
     end
 
     it 'Takes me to the movies page' do
       VCR.use_cassette('Top Rated Movies 1') do
       visit discover_index_path
 
+      expect(page).to have_content("Latest Movie:")
       click_button('Find Top Rated Movies')
 
       expect(page).to have_content('Vote Average:', count: 40)
@@ -48,11 +53,13 @@ RSpec.describe 'As an authenticated user' do
     end
 
     it 'Has search text field for movie' do
+      VCR.use_cassette('discover30') do
       visit discover_index_path
 
       expect(page).to have_field('search')
       expect(page).to have_xpath("//input[@value='Search by movie title']")
       expect(page).to have_button('Find Movies')
+      end
     end
 
     it 'Search brings me to movies page' do

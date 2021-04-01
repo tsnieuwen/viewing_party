@@ -39,5 +39,11 @@ Total Reviews: <%= @details[:all_reviews].count %>
   </blockquote>
 </div>
 
+<h4>Movie Keywords</h4>
+<% @keywords.each do |keyword| %>
+  <p><%= keyword %></p>
+<% end%>
+
+
 </center>
 

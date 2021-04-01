@@ -17,11 +17,11 @@ gem 'bootsnap'
 gem 'jbuilder', '~> 2.5'
 gem 'redis-rails'
 
-
 # Api
 gem 'faraday'
 gem 'figaro'
 gem 'mimemagic', '~> 0.3.8'
+gem 'redis-rails'
 
 # Authentication
 gem 'bcrypt'

@@ -49,4 +49,18 @@ class MovieService
     cast = 9 if cast > 10
     attributes[:cast][0..cast]
   end
+
+  def self.keywords(api_id)
+    response = conn.get("3/movie/#{api_id}/keywords")
+    attributes = JSON.parse(response.body, symbolize_names: true)
+    attributes[:keywords].map do |key|
+      key[:name].titleize
+    end
+  end
+
+  def self.latest
+    response = conn.get('3/movie/latest')
+    attributes = JSON.parse(response.body, symbolize_names: true)
+    ShowMovie.new(attributes)
+  end
 end
