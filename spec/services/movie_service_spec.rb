@@ -21,7 +21,7 @@ RSpec.describe MovieService do
       end
     end
     it "reviews" do
-      VCR.use_cassette('movie_service_test30') do
+      VCR.use_cassette('movie_service_test3030') do
         input = "100"
         details = MovieService.reviews(input)
 

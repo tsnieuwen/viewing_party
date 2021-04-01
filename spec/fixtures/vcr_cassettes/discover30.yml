@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/latest?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 01 Apr 2021 04:29:44 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=0
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - f54ee60e728b8b79a2323ad7a0f7d6461e26906f
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '0'
+      Last-Modified:
+      - '2021-04-01 04:29:34 +0000'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 7b684daf68830c24a645afbee86b35aa.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - zBhfc3norHKkQ78mSi5Ib8rGkj0Q5yMYPd8nTGmtnp4U0GpXlYesfw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":null,"belongs_to_collection":null,"budget":0,"genres":[],"homepage":"","id":812646,"imdb_id":null,"original_language":"en","original_title":"Daylight
+        Bombing Raids On Europe","overview":"Whilst the Royal Air Force concentrated
+        on bombing Germany at night, the United States Air Force carried out a dangerous
+        strategic bombing campaign against Nazi Germany during daylight hours. On
+        every raid, bombers suffered damage, exploded in mid-air, fell from the sky
+        in pieces or crashed in flames. For the Flying Fortresses and Liberator Bombers
+        of the 8th Air Force and 9th Air Force, it was a testing time high in the
+        deadly skies over war-torn Europe.","popularity":0.0,"poster_path":null,"production_companies":[],"production_countries":[],"release_date":"","revenue":0,"runtime":57,"spoken_languages":[],"status":"Released","tagline":"","title":"Daylight
+        Bombing Raids On Europe","video":false,"vote_average":0.0,"vote_count":0}'
+  recorded_at: Thu, 01 Apr 2021 04:29:44 GMT
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/812646?api_key=DONT_LOOK&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 01 Apr 2021 04:29:43 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - fa313edf313ef7c70195821ed81091fd87c6e873
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Last-Modified:
+      - '2021-04-01 04:29:34 +0000'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 d51c7bceca481ac0b07e2c48a718dfb7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      X-Amz-Cf-Id:
+      - MSzcf-FNOA6M1gXVjM1sMVM-TrmWtO7yJqX9oBbrJT967WlHTiV2cA==
+      Age:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":null,"belongs_to_collection":null,"budget":0,"genres":[],"homepage":"","id":812646,"imdb_id":null,"original_language":"en","original_title":"Daylight
+        Bombing Raids On Europe","overview":"Whilst the Royal Air Force concentrated
+        on bombing Germany at night, the United States Air Force carried out a dangerous
+        strategic bombing campaign against Nazi Germany during daylight hours. On
+        every raid, bombers suffered damage, exploded in mid-air, fell from the sky
+        in pieces or crashed in flames. For the Flying Fortresses and Liberator Bombers
+        of the 8th Air Force and 9th Air Force, it was a testing time high in the
+        deadly skies over war-torn Europe.","popularity":0.0,"poster_path":null,"production_companies":[],"production_countries":[],"release_date":"","revenue":0,"runtime":57,"spoken_languages":[],"status":"Released","tagline":"","title":"Daylight
+        Bombing Raids On Europe","video":false,"vote_average":0.0,"vote_count":0}'
+  recorded_at: Thu, 01 Apr 2021 04:29:44 GMT
+recorded_with: VCR 6.0.0
