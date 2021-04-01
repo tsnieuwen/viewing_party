@@ -14,4 +14,8 @@ class MovieFacade
   def self.movie_details(api_id)
     MovieService.reviews(api_id)
   end
+
+  def self.keywords(api_id)
+    MovieService.keywords(api_id)
+  end
 end

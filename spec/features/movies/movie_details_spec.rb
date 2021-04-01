@@ -14,8 +14,9 @@ RSpec.describe 'As an authenticated user' do
       expect(expected).to be_empty
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
-      VCR.use_cassette('single_movie_details1010') do
+      VCR.use_cassette('single_movie_details1019') do
       visit movie_path("#{Figaro.env.movie_details}")
+      
       expected2 = Movie.all
       expect(expected2).not_to be_empty
       expect(page).to have_button("Create Viewing Party for The Lord of the Rings")
@@ -27,6 +28,9 @@ RSpec.describe 'As an authenticated user' do
       expect(page).to have_content("The Fellowship of the Ring embark")
       expect(page).to have_content("Total Reviews: 0")
       expect(page).to have_content("Christopher Guard as Frodo")
+      expect(page).to have_content("Elves")
+      expect(page).to have_content("Dwarf")
+      expect(page).to have_content("Hobbit")
       end
     end
   end
