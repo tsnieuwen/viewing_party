@@ -20,4 +20,9 @@ class ShowMovie
     @genres = data[:genres]
     @poster = data[:poster_path]
   end
+
+  def send_poster_info
+    movie = MovieService.show_movie(api_id)
+    "https://image.tmdb.org/t/p/w154#{movie.poster}"
+  end
 end

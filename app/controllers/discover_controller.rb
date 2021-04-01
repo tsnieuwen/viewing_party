@@ -1,5 +1,7 @@
 class DiscoverController < ApplicationController
   before_action :authorized, only: [:index]
 
-  def index; end
+  def index
+    @latest = MovieService.latest
+  end
 end
