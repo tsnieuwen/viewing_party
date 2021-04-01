@@ -42,7 +42,7 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Mount Action Cable outside main process or domain
-  # config.action_cable.mount_path = nil
+  config.action_cable.mount_path = 'http://damp-fjord-30128.herokuapp.com'
   config.action_cable.url = 'wss://damp-fjord-30128.herokuapp.com/cable'
   config.action_cable.allowed_request_origins = [ 'http://damp-fjord-30128.herokuapp.com', /http:\/\/damp-fjord-30128.herokuapp.*/ ]
 
